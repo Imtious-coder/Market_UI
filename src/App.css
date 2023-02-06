@@ -10,6 +10,8 @@
   --color-febd69: #febd69;
   --color-232f3e: #232f3e;
   --color-bf4800: #bf4800;
+  --color-f5f5f7: #f5f5f7;
+  --color-ededed: #ededed;
 }
 
 body {
@@ -51,7 +53,7 @@ a:hover {
   background-color: var(--color-febd69);
 }
 
-/* Header Part */
+/* HEADER PART  */
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);
   background-color: var(--color-131921);
@@ -98,9 +100,9 @@ a:hover {
   background: transparent;
   color: var(--color-febd69) !important;
 }
-/* Header Part END HERE */
+/* HEADER PART ENDS HERE */
 
-/* Footer Part */
+/* FOOTER PART */
 footer {
   background-color: var(--color-232f3e);
 }
@@ -112,9 +114,9 @@ footer .input-group-text {
   color: white;
   padding: 8px 17px;
 }
-/* Footer Part  Ends Here */
+/* FOOTER PART ENDS HERE */
 
-/* Home Page */
+/* HOME PAGE */
 .main-banner-content {
   top: 15%;
   left: 5%;
@@ -171,4 +173,38 @@ footer .input-group-text {
   letter-spacing: 0.4px;
 }
 
-/* Home Page Ends Here */
+/* section 2 */
+.home-wrapper-2 {
+  background-color: var(--color-f5f5f7);
+}
+/* section 2 ends here */
+/* categories section */
+.categories {
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+}
+.categories > div {
+  width: 24%;
+  padding: 10px 10px 10px 20px;
+}
+.categories > div > div {
+  width: 60%;
+}
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3),
+.categories > div:nth-child(4) {
+  border-bottom: 1px solid var(--color-ededed);
+}
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3),
+.categories > div:nth-child(5),
+.categories > div:nth-child(6),
+.categories > div:nth-child(7) {
+  border-right: 1px solid var(--color-ededed);
+}
+/* categories section ends here */
+
+/* HOME PAGE ENDS HERE */
