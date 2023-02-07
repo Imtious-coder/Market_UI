@@ -12,6 +12,14 @@
   --color-bf4800: #bf4800;
   --color-f5f5f7: #f5f5f7;
   --color-ededed: #ededed;
+  --color-777777: #777777;
+  --color-1c1b1b: #1c1b1b;
+}
+.section-heading {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 .card-wrapper {
   padding: 15px;
@@ -183,9 +191,8 @@ footer .input-group-text {
   background-color: var(--color-f5f5f7);
 }
 /* section 2 ends here */
+
 /* categories section */
-.categories {
-}
 .categories > div {
   width: 24%;
   padding: 10px 10px 10px 20px;
@@ -210,3 +217,84 @@ footer .input-group-text {
 /* categories section ends here */
 
 /* HOME PAGE ENDS HERE */
+
+/* BLOG PART */
+.blog-card {
+  border-radius: 10px;
+  color: black !important;
+  background-color: white;
+}
+.blog-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.blog-content {
+  padding: 15px;
+}
+.blog-content p.date {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-777777);
+}
+.blog-content h5 {
+  font-size: 18px;
+  color: var(--color-1c1b1b);
+}
+.blog-content p.desc {
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--color-777777);
+}
+/* BLOG PART ENDS HERE */
+
+/* PRODUCT SECTION */
+.product-card {
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.product-card:hover .action-bar {
+  right: 13px;
+}
+.product-card .product-image {
+  height: 270px;
+}
+.product-card .product-image img {
+  object-fit: contain;
+}
+.product-card .product-image > img:last-child {
+  display: none;
+}
+.product-card:hover .product-image > img:nth-child(1) {
+  display: none;
+}
+.product-card:hover .product-image > img:last-child {
+  display: block;
+}
+.product-card .product-details h6 {
+  color: var(--color-bf4800);
+  font-size: 13px;
+}
+.product-card .product-details h5 {
+  font-size: 15px;
+  color: var(--color-1c1b1b);
+}
+.product-card .product-details p.price {
+  font-size: 16px;
+  color: var(--color-1c1b1b);
+}
+.action-bar {
+  top: 11%;
+  right: -23px;
+  transition: 0.3s;
+}
+.wishlist-icon {
+  top: 3%;
+  right: 15px;
+}
+
+/* PRODUCT SECTION ENDS HERE*/
