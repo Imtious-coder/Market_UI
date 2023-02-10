@@ -296,5 +296,12 @@ footer .input-group-text {
   top: 3%;
   right: 15px;
 }
+/* PRODUCT SECTION ENDS HERE */
 
-/* PRODUCT SECTION ENDS HERE*/
+/* SPECIAL PRODUCT SECTION */
+.special-product-card {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+/* SPECIAL  PRODUCT SECTION ENDS HERE*/
