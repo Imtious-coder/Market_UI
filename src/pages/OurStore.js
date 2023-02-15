@@ -146,7 +146,35 @@ const OurStore = () => {
             </div>
             {/* RIGHT SIDE PRODUCTS */}
             <div className="col-9">
+              <div className="filter-sort-grid">
+                <div className="d-flex justify-content-between align-items-center">
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="mb-0 d-inline-block" style={{width: "100px"}}>Sort By:</p>
+                    <select name="" className="form-control form-select" id="">
+                      <option defaultValue>Best Selling</option>
+                      <option>Featured</option>
+                      <option>Alphabetically, A-Z</option>
+                      <option >Alphabetically, Z-A</option>
+                      <option>Price, low to high</option>
+                      <option>Price, high to low </option>
+                      <option>Date, new to old</option>
+                      <option>Date, old to new</option>
+                    </select>
+                  </div>
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="total-products mb-0">21 Products</p>
+                    <div className="d-flex grid align-items-center gap-10">
+                      <img src="images/gr4.svg" className="d-block img-fluid" alt="grid" />
+                      <img src="images/gr3.svg" className="d-block img-fluid" alt="grid" />
+                      <img src="images/gr2.svg" className="d-block img-fluid" alt="grid" />
+                      <img src="images/gr.svg" className="d-block img-fluid" alt="grid" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="">
 
+              </div>
             </div>
           </div>
         </div>
