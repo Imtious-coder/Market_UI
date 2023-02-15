@@ -1,4 +1,5 @@
 import React from 'react'
+import BlogCard from '../components/BlogCard'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 
@@ -26,7 +27,7 @@ const Blog = () => {
             </div>
             {/* RIGHT SIDE */}
             <div className="col-9">
-
+              
             </div>
           </div>
         </div>
