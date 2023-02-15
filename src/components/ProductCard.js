@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactStars from "react-rating-stars-component";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const ProductCard = () => {
+const ProductCard = ({ grid }) => {
+  let location = useLocation();
+  console.log(grid)
   return (
-    <div className="col-3">
-      <Link to="/">
+    <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"} `}>
+      <Link to="/" className="product-card-link">
         <div className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link to="/">
@@ -28,6 +30,7 @@ const ProductCard = () => {
               edit={false}
               activeColor="#ffd700"
             />
+            <p className="description pe-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             <p className="price"> $100.00 </p>
           </div>
           <div className="action-bar position-absolute">
