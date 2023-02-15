@@ -468,3 +468,33 @@ footer .input-group-text {
   margin-bottom: 20px;
 }
 /* OUR STORE ENDS HERE */
+
+/* CONTACT US */
+.contact-inner-wrapper {
+  padding: 30px 20px;
+  gap: 15px;
+  border-radius: 15px;
+  background-color: white;
+}
+.contact-inner-wrapper > div {
+  width: 48%;
+}
+.contact-title{
+  margin-top: 0;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 35px;
+}
+.contact-inner-wrapper form .form-control {
+  padding: 10px;
+  border: transparent;
+  border-radius: 5px;
+  background-color: var(--color-f5f5f7);
+}
+.contact-inner-wrapper address,
+.contact-inner-wrapper a,
+.contact-inner-wrapper p {
+  color: var(--color-777777);
+}
+/* CONTACT US ENDS HERE */
