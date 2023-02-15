@@ -13,7 +13,7 @@ const Blog = () => {
           <div className="row">
             {/* LEFT SIDE */}
             <div className="col-3">
-            <div className="filter-card mb-3">
+              <div className="filter-card mb-3">
                 <h3 className="filter-title">Find By Categories</h3>
                 <div>
                   <ul className="ps-0">
@@ -27,7 +27,32 @@ const Blog = () => {
             </div>
             {/* RIGHT SIDE */}
             <div className="col-9">
-              
+              <div className="row gy-4">
+                <div className="col-6">
+                  <BlogCard />
+                </div>
+                <div className="col-6">
+                  <BlogCard />
+                </div>
+                <div className="col-6">
+                  <BlogCard />
+                </div>
+                <div className="col-6">
+                  <BlogCard />
+                </div>
+                <div className="col-6">
+                  <BlogCard />
+                </div>
+                <div className="col-6">
+                  <BlogCard />
+                </div>
+                <div className="col-6">
+                  <BlogCard />
+                </div>
+                <div className="col-6">
+                  <BlogCard />
+                </div>
+              </div>
             </div>
           </div>
         </div>
