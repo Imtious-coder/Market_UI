@@ -28,6 +28,9 @@
 }
 
 body {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
   font-family: "Rubik", sans-serif;
 }
 a {
@@ -305,3 +308,36 @@ footer .input-group-text {
   background-color: white;
 }
 /* SPECIAL  PRODUCT SECTION ENDS HERE*/
+
+/* FAMOUS-CARD SECTION */
+.famous-card {
+  border-radius: 10px;
+}
+.famous-card .famous-card-content {
+  top: 10%;
+}
+.famous-card img {
+  height: 350px;
+  width: 100%;
+  border-radius: 10px;
+}
+.famous-card-content h5 {
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400px;
+  margin-bottom: 7px;
+}
+.famous-card-content h6 {
+  color: white;
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500px;
+}
+.famous-card-content p {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100px;
+}
+/* FAMOUS-CARD SECTION ENDS HERE*/

@@ -187,6 +187,52 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="famous-wrapper home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img className="" src="images/famouse-1.webp" alt="famous" />
+                <div className="famous-card-content position-absolute px-4">
+                  <h5 className="text-uppercase">Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>From $399 or $16.62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img className="" src="images/famouse-2.webp" alt="famous" />
+                <div className="famous-card-content position-absolute px-4">
+                  <h5 className="text-uppercase">Studio Display</h5>
+                  <h6>600 nits of brightness</h6>
+                  <p>27-inch 5k Retina display</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative text-dark">
+                <img className="" src="images/famous-3.webp" alt="famous" />
+                <div className="famous-card-content position-absolute px-4">
+                  <h5 className="text-uppercase">Smartphones</h5>
+                  <h6>iPhone 13 Pro.</h6>
+                  <p>Now in Black. From $999.00 or $41.62/mo. for 24 mo. Footnote*</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative text-dark">
+                <img className="" src="images/famouse-4.jpeg" alt="famous" />
+                <div className="famous-card-content position-absolute px-4">
+                  <h5 className="text-uppercase">home speakers</h5>
+                  <h6>Room-filling sound</h6>
+                  <p>From $699.00 or $116.29/mo. for 14 mo.*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="special-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
