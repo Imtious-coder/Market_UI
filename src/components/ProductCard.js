@@ -4,19 +4,18 @@ import { Link, useLocation } from 'react-router-dom';
 
 const ProductCard = ({ grid }) => {
   let location = useLocation();
-  console.log(grid)
   return (
     <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"} `}>
-      <Link to="/" className="product-card-link">
+      <Link to="/product/:id" className="product-card-link">
         <div className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link to="/">
-              <img src="images/wish.svg" alt="wishlist" />
+              <img src="/images/wish.svg" alt="wishlist" />
             </Link>
           </div>
           <div className="product-image">
-            <img src="images/watch.jpg" className="img-fluid" alt="product_image" />
-            <img src="images/watch-1.jpeg" className="img-fluid" alt="product_image" />
+            <img src="/images/watch.jpg" className="img-fluid" alt="product_image" />
+            <img src="/images/watch-1.jpeg" className="img-fluid" alt="product_image" />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -36,13 +35,13 @@ const ProductCard = ({ grid }) => {
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <Link to="/">
-                <img src="images/view.svg" alt="view"/>
+                <img src="/images/view.svg" alt="view"/>
               </Link>
               <Link to="/">
-                <img src="images/prodcompare.svg" alt="add_cart"/>
+                <img src="/images/prodcompare.svg" alt="add_cart"/>
               </Link>
               <Link to="/">
-                <img src="images/add-cart.svg" alt="add_cart"/>
+                <img src="/images/add-cart.svg" alt="add_cart"/>
               </Link>
             </div>
           </div>
