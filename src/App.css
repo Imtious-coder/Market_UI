@@ -587,3 +587,11 @@ footer .input-group-text {
   color: var(--color-1c1b1b);
 }
 /* AUTH CARD ENDS HERE */
+
+/* POLICY PAGES */
+.policy {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+/* POLICY PAGES ENDS HERE */
