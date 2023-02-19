@@ -469,7 +469,7 @@ footer .input-group-text {
 }
 /* OUR STORE ENDS HERE */
 
-/* CONTACT US */
+/* CONTACT US PAGE */
 .contact-inner-wrapper {
   padding: 30px 20px;
   gap: 15px;
@@ -498,3 +498,28 @@ footer .input-group-text {
   color: var(--color-777777);
 }
 /* CONTACT US ENDS HERE */
+
+/* COMPARE PRODUCTS PAGE */
+.compare-product-card {
+  padding: 20px 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+.compare-product-card .cross {
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  cursor: pointer;
+}
+.compare-product-details h5.title {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-1c1b1b);
+}
+.compare-product-details h6.price {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+/* COMPARE PRODUCTS PAGE ENDS HERE */
