@@ -28,11 +28,11 @@ const Signup = () => {
                     <input type="password" name="password" placeholder="Password" className="form-control" />
                   </div>
                   <div>
-                    <div className="d-flex justify-content-center align-items-center mt-3 gap-15">
+                    <div className="d-flex flex-column justify-content-center align-items-center mt-3 gap-15">
                       <button className="button border-0">Create</button>
-                      {/* <Link to="/signup">
-                        <button className="button2 border-0">Sign up</button>
-                      </Link> */}
+                      <Link to="/login">
+                        <p className="mb-0 text-primary">Already have an account?</p>
+                      </Link>
                     </div>
                   </div>
                 </form>
