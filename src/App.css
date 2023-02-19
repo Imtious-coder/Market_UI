@@ -542,7 +542,7 @@ footer .input-group-text {
 /* AUTH CARD */
 .auth-card {
   width: 500px;
-  padding: 20px;
+  padding: 20px 30px;
   margin: 30px auto;
   background-color: white;
   border-radius: 10px;
@@ -552,10 +552,15 @@ footer .input-group-text {
   font-weight: 500;
   color: var(--color-777777);
 }
+.auth-card h6 {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-777777);
+}
 .auth-card .form-control {
   height: 40px;
   font-size: 14px;
-  border-radius: 10px;
+  border-radius: 5px;
   border-color: transparent;
   color: var(--color-777777);
   background-color: var(--color-f5f5f7);
