@@ -7,6 +7,7 @@ import Blog from './pages/Blog';
 import CompareProduct from './pages/CompareProduct';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
+import Login from './pages/Login';
 import OurStore from './pages/OurStore';
 import Wishlist from './pages/Wishlist';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="about" element={<About/>} />
           <Route path="compare-product" element={<CompareProduct/>} />
           <Route path="wishlist" element={<Wishlist/>} />
+          <Route path="login" element={<Login/>} />
         </Route>
       </Routes>
     </BrowserRouter>
