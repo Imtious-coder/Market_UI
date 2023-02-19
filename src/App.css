@@ -265,16 +265,16 @@ footer .input-group-text {
   color: var(--color-777777);
 }
 
-.single-blog-card h3{
+.single-blog-card h3 {
   font-size: 24px;
   font-weight: 600;
   color: var(--color-1c1b1b);
 }
-.single-blog-card p{
+.single-blog-card p {
   font-size: 14px;
   color: var(--color-777777);
 }
-.single-blog-card a{
+.single-blog-card a {
   font-size: 15px;
   margin-bottom: 20px;
   color: var(--color-777777);
@@ -505,7 +505,7 @@ footer .input-group-text {
 .contact-inner-wrapper > div {
   width: 48%;
 }
-.contact-title{
+.contact-title {
   margin-top: 0;
   font-size: 26px;
   font-weight: 500;
@@ -597,6 +597,31 @@ footer .input-group-text {
 /* POLICY PAGES ENDS HERE */
 
 /* MAIN PRODUCT PAGES */
+.main-product-image {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+.main-product-image > div {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.main-product-image img {
+  width: 100% !important;
+  height: 500px !important;
+  object-fit: cover;
+}
+.other-product-images {
+  padding: 20px;
+  background-color: white;
+}
+.other-product-images>div {
+  width: 48%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
 .description-wrapper h4,
 .reviews-wrapper h3 {
   font-size: 26px;

@@ -7,6 +7,7 @@ import ProductCard from '../components/ProductCard';
 
 
 const SingleProduct = () => {
+  // const props = {width:400, height:500, zoomWidth:500, img:"/images/watch.jpg"};
   const orderedProduct = false;
   return (
     <>
@@ -15,7 +16,28 @@ const SingleProduct = () => {
       <section className="main-product-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-6"></div>
+            <div className="col-6">
+              <div className="main-product-image">
+                <div className="">
+                  {/* <ReactImageZoom {...props} /> */}
+                  <img src="/images/watch.jpg" className="img-fluid" alt="watch" />
+                </div>
+              </div>
+              <div className="other-product-images d-flex gap-3 flex-wrap">
+                <div className="">
+                  <img src="/images/watch.jpg" className="img-fluid" alt="watch" />
+                </div>
+                <div className="">
+                  <img src="/images/watch.jpg" className="img-fluid" alt="watch" />
+                </div>
+                <div className="">
+                  <img src="/images/watch.jpg" className="img-fluid" alt="watch" />
+                </div>
+                <div className="">
+                  <img src="/images/watch.jpg" className="img-fluid" alt="watch" />
+                </div>
+              </div>
+            </div>
             <div className="col-6"></div>
           </div>
         </div>
