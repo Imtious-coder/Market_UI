@@ -38,7 +38,13 @@ const SingleProduct = () => {
                 </div>
               </div>
             </div>
-            <div className="col-6"></div>
+            <div className="col-6">
+              <div className="main-product-details">
+                <div className="border-bottom">
+                  <h3 className="title">Kids Smartwatch Bulk 10 Pck Multi Color For Students.</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

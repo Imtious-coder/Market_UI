@@ -621,6 +621,18 @@ footer .input-group-text {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
+.main-product-details {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+.main-product-details h3.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-1c1b1b);
+}
+
+
 
 .description-wrapper h4,
 .reviews-wrapper h3 {
