@@ -1,7 +1,10 @@
 import React from 'react';
+import { TbGitCompare } from 'react-icons/tb';
+import { AiOutlineHeart } from 'react-icons/ai';
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
 import BreadCrumb from '../components/BreadCrumb';
+import Color from '../components/Color';
 import Meta from '../components/Meta';
 import ProductCard from '../components/ProductCard';
 
@@ -43,6 +46,77 @@ const SingleProduct = () => {
                 <div className="border-bottom">
                   <h3 className="title">Kids Smartwatch Bulk 10 Pck Multi Color For Students.</h3>
                 </div>
+                <div className="border-bottom pb-3 pt-1">
+                  <p className="price mb-0">$ 199.00</p>
+                  <div className="d-flex gap-10 align-items-center">
+                    <ReactStars
+                      count={5}
+                      size={24}
+                      value={4}
+                      edit={false}
+                      activeColor="#ffd700"
+                    /> -
+                    <p className="mb-0 review-count">&#40; 7 reviews &#41;</p>
+                  </div>
+                  <a href="#review">Write a review</a>
+                </div>
+                <div className="border-bottom py-3">
+                  <div className="d-flex align-items-center gap-10 my-2">
+                    <h3 className="product-heading">Type :</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex align-items-center gap-10 my-2">
+                    <h3 className="product-heading">Brand :</h3>
+                    <p className="product-data">Havels</p>
+                  </div>
+                  <div className="d-flex align-items-center gap-10 my-2">
+                    <h3 className="product-heading">Category :</h3>
+                    <p className="product-data"> Watch</p>
+                  </div>
+                  <div className="d-flex align-items-center gap-10 my-2">
+                    <h3 className="product-heading">Tags :</h3>
+                    <p className="product-data">Watch - Laptop - Mobile - Smart watch</p>
+                  </div>
+                  <div className="d-flex align-items-center gap-10 my-2">
+                    <h3 className="product-heading">Availablity :</h3>
+                    <p className="product-data">In Stock</p>
+                  </div>
+                  <div className="d-flex align-items-center gap-10 my-3">
+                    <h3 className="product-heading">Size :</h3>
+                    <div className="d-flex flex-wrap gap-15">
+                      <span className="badge text-dark border border-secondary">S</span>
+                      <span className="badge text-dark border border-secondary">M</span>
+                      <span className="badge text-dark border border-secondary">XL</span>
+                      <span className="badge text-dark border border-secondary">XXL</span>
+                    </div>
+                  </div>
+                  <div className="d-flex flex-column gap-10 my-2">
+                    <h3 className="product-heading">Color :</h3>
+                    <Color />
+                  </div>
+                  <div className="d-flex align-items-center gap-10 my-3">
+                    <h3 className="product-heading">Quantity :</h3>
+                    <div>
+                      <input type="number" name="" placeholder="0" min={1} max={20} className="form-control" style={{width: "70px", height: "30px"}} />
+                    </div>
+                    <div className="d-flex align-items-center gap-10 ms-4">
+                      <button className="button">ADD TO CART</button>
+                      <button className="button2">But It Now</button>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-30 my-4">
+                    <div className="d-flex align-items-center gap-10">
+                      <a href="lol" className="d-flex align-items-center">
+                        <AiOutlineHeart  className="fs-5 me-2"/> Add to Wishlist
+                      </a>
+                    </div>
+                    <div className="d-flex align-items-center gap-10">
+                      <a href="lol" className="d-flex align-items-center">
+                        <TbGitCompare  className="fs-5 me-2"/> Add to Compare
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -58,7 +132,7 @@ const SingleProduct = () => {
           </div>
         </div>
       </section>
-      <section className="reviews-wrapper home-wrapper-2">
+      <section id="review" className="reviews-wrapper home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
