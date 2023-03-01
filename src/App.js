@@ -4,6 +4,7 @@ import './App.css';
 import Layout from './components/Layout';
 import About from './pages/About';
 import Blog from './pages/Blog';
+import Cart from './pages/Cart';
 import CompareProduct from './pages/CompareProduct';
 import Contact from './pages/Contact';
 import Forgotpassword from './pages/Forgotpassword';
@@ -31,6 +32,7 @@ function App() {
           <Route path="product/:id" element={<SingleProduct/>} />
           <Route path="blog" element={<Blog/>} />
           <Route path="blog/:id" element={<SingleBlog/>} />
+          <Route path="cart" element={<Cart/>} />
           <Route path="contact" element={<Contact/>} />
           <Route path="about" element={<About/>} />
           <Route path="compare-product" element={<CompareProduct/>} />

@@ -701,3 +701,46 @@ footer .input-group-text {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* MAIN PRODUCT PAGES ENDS HERE */
+
+/* CART */
+.cart-header,
+.cart-data {
+  border-bottom: 1px solid #eaeaea;
+}
+.cart-header h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--color-777777);
+}
+.cart-col-1 {
+  width: 40%;
+}
+.cart-col-1 p,
+.cart-col-1 h5 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: var(--color-777777);
+}
+.cart-col-2 {
+  width: 10%;
+}
+.cart-col-2 h5 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: var(--color-1c1b1b);
+}
+.cart-col-3 {
+  width: 15%;
+}
+.cart-col-4 {
+  width: 15%;
+}
+.cart-wrapper .subtotal {
+  font-size: 18px;
+  color: var(--color-777777);
+}
+.cart-wrapper .tax {
+  font-size: 13px;
+  color: var(--color-777777);
+}
+/* CART ENDS HERE */
