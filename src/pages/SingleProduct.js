@@ -1,6 +1,6 @@
 import React from 'react';
-import { TbGitCompare } from 'react-icons/tb';
 import { AiOutlineHeart } from 'react-icons/ai';
+import { TbGitCompare } from 'react-icons/tb';
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
 import BreadCrumb from '../components/BreadCrumb';
@@ -12,6 +12,15 @@ import ProductCard from '../components/ProductCard';
 const SingleProduct = () => {
   // const props = {width:400, height:500, zoomWidth:500, img:"/images/watch.jpg"};
   const orderedProduct = false;
+  const copyToClipboard = (text) => {
+    console.log('text', text)
+    var textField = document.createElement('textarea')
+    textField.innerText = text
+    document.body.appendChild(textField)
+    textField.select()
+    document.execCommand('copy')
+    textField.remove()
+  }
   return (
     <>
       <Meta title={"Product Name"} />
@@ -101,7 +110,7 @@ const SingleProduct = () => {
                     </div>
                     <div className="d-flex align-items-center gap-10 ms-4">
                       <button className="button">ADD TO CART</button>
-                      <button className="button2">But It Now</button>
+                      <button className="button2">Buy It Now</button>
                     </div>
                   </div>
                   <div className="d-flex align-items-center gap-30 my-4">
@@ -115,6 +124,16 @@ const SingleProduct = () => {
                         <TbGitCompare  className="fs-5 me-2"/> Add to Compare
                       </a>
                     </div>
+                  </div>
+                </div>
+                <div className="border-bottom py-3">
+                  <div className="d-flex flex-column gap-10 my-3">
+                    <h3 className="product-heading">Shipping & Returns :</h3>
+                    <p className="product-data">Free shipping and returns available on all orders! <br/> We ship all US domestic order within <strong>5-10 business days!</strong></p>
+                  </div>
+                  <div className="d-flex align-items-center gap-10 my-3">
+                    <h3 className="product-heading">Copy Product Link :</h3>
+                    <a href="javascript:void(0);" onClick={() => {copyToClipboard("https://market.com/product/watch");}}>https://market.com/product/watch</a>
                   </div>
                 </div>
               </div>
