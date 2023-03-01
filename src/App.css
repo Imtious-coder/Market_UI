@@ -744,3 +744,23 @@ footer .input-group-text {
   color: var(--color-777777);
 }
 /* CART ENDS HERE */
+
+/* CHECKOUT PAGE */
+.checkout-wrapper .title,
+.checkout-wrapper .user-details,
+.checkout-wrapper .total,
+.checkout-wrapper .shipping,
+.checkout-wrapper .subtotal,
+.checkout-wrapper .product-title,
+.checkout-wrapper .product-code {
+  font-size: 14px;
+  color: var(--color-777777);
+}
+.checkout-wrapper .total-price,
+.checkout-wrapper .shipping-price,
+.checkout-wrapper .subtotal-price, 
+.checkout-wrapper .product-price {
+  font-size: 16px;
+  color: var(--color-777777);
+}
+/* CHECKOUT PAGE ENDS HERE */
