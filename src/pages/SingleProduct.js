@@ -133,7 +133,7 @@ const SingleProduct = () => {
                   </div>
                   <div className="d-flex align-items-center gap-10 my-3">
                     <h3 className="product-heading">Copy Product Link :</h3>
-                    <a href="javascript:void(0);" onClick={() => {copyToClipboard("https://market.com/product/watch");}}>https://market.com/product/watch</a>
+                    <a href="#test" onClick={() => {copyToClipboard("https://market.com/product/watch");}}>https://market.com/product/watch</a>
                   </div>
                 </div>
               </div>
