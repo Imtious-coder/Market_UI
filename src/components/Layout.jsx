@@ -5,12 +5,12 @@ import Header from "./Header";
 
 const Layout = () => {
   return (
-  <>
-    <Header/>
-    <Outlet/>
-    <Footer/>
-  </>
-  )
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  );
 };
 
 export default Layout;

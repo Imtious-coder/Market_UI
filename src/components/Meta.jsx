@@ -1,5 +1,5 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
+import React from "react";
+import { Helmet } from "react-helmet";
 
 const Meta = ({ title }) => {
   return (
@@ -7,7 +7,7 @@ const Meta = ({ title }) => {
       <meta charSet="utf-8" />
       <title>{title}</title>
     </Helmet>
-  )
-}
+  );
+};
 
-export default Meta
+export default Meta;
