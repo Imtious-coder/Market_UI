@@ -758,7 +758,7 @@ footer .input-group-text {
 }
 .checkout-wrapper .total-price,
 .checkout-wrapper .shipping-price,
-.checkout-wrapper .subtotal-price, 
+.checkout-wrapper .subtotal-price,
 .checkout-wrapper .product-price {
   font-size: 16px;
   color: var(--color-777777);
