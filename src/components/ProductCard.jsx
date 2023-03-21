@@ -49,7 +49,7 @@ const ProductCard = ({ grid }) => {
             </h5>
             <div
               style={{ display: "flex", justifyContent: "center" }}
-              classNames="ratings"
+              className="ratings"
             >
               <ReactStars
                 count={5}
