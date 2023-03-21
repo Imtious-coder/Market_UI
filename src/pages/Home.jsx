@@ -10,7 +10,7 @@ import { services } from "../utils/Data";
 const Home = () => {
   return (
     <>
-      <Container class1="home-wrapper-1 py-3 pb-lg-5">
+      <Container class1="home-wrapper-1 py-3">
         <div className="row">
           <div className="col-12 col-lg-6">
             <div className="main-banner position-relative">
@@ -107,7 +107,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Container class1="home-wrapper-2 py-4">
+      <Container class1="home-wrapper-2 service py-4">
         <div className="row ps-4 ps-sm-0">
           {services?.map((service, index) => {
             return (
@@ -131,66 +131,115 @@ const Home = () => {
           })}
         </div>
       </Container>
-      <Container class1="home-wrapper-2 py-5">
-        <div className="row">
+      <Container class1="home-wrapper-2 categories py-5">
+        <div className="row px-3">
           <div className="col-12">
-            <div className="categories d-flex justify-content-center flex-wrap align-items-center">
-              <div className="d-flex align-items-center">
-                <div>
-                  <h6>Cameras</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/camera.jpg" alt="camera" />
-              </div>
-              <div className="d-flex align-items-center">
-                <div>
-                  <h6>Smart TV</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/tv.jpg" alt="camera" />
-              </div>
-              <div className="d-flex align-items-center">
-                <div>
-                  <h6>Headphones</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/headphone.jpg" alt="camera" />
-              </div>
-              <div className="d-flex align-items-center">
-                <div>
-                  <h6>Cameras</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/camera.jpg" alt="camera" />
-              </div>
-              <div className="d-flex align-items-center">
-                <div>
-                  <h6>Smart TV</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/tv.jpg" alt="camera" />
-              </div>
-              <div className="d-flex align-items-center">
-                <div>
-                  <h6>Cameras</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/camera.jpg" alt="camera" />
-              </div>
-              <div className="d-flex align-items-center">
-                <div>
-                  <h6>Cameras</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/camera.jpg" alt="camera" />
-              </div>
-              <div className="d-flex align-items-center">
-                <div>
-                  <h6>Headphones</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/headphone.jpg" alt="camera" />
-              </div>
+            <h3 className="section-heading text-center text-sm-start">
+              Shop By Categories
+            </h3>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-center gap-4 shadow-sm py-3 mt-4 mt-sm-0">
+            <div>
+              <h6>Speaker</h6>
+              <p>400 Items</p>
+            </div>
+            <div>
+              <img
+                src="images/speaker.jpg"
+                alt="camera"
+                className="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-center gap-4 shadow-sm py-3">
+            <div>
+              <h6>Cameras</h6>
+              <p>10 Items</p>
+            </div>
+            <div>
+              <img
+                src="images/camera.jpg"
+                alt="camera"
+                className="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-center gap-4 shadow-sm py-3 mt-4 mt-sm-0">
+            <div>
+              <h6>Headphone</h6>
+              <p>101 Items</p>
+            </div>
+            <div>
+              <img
+                src="images/headphone.jpg"
+                alt="camera"
+                className="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-center gap-4 shadow-sm py-3 mt-4 mt-sm-0">
+            <div>
+              <h6>Laptop</h6>
+              <p>200 Items</p>
+            </div>
+            <div>
+              <img
+                src="images/laptop.jpg"
+                alt="camera"
+                className="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-center gap-4 shadow-sm py-3 mt-4 mt-sm-0">
+            <div>
+              <h6>TWS</h6>
+              <p>502 Items</p>
+            </div>
+            <div>
+              <img
+                src="images/acc.jpg"
+                alt="camera"
+                className="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-center gap-4 shadow-sm py-3 mt-4 mt-sm-0">
+            <div>
+              <h6>TV</h6>
+              <p>404 Items</p>
+            </div>
+            <div>
+              <img
+                src="images/tv.jpg"
+                alt="camera"
+                className="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-center gap-4 shadow-sm py-3 mt-4 mt-sm-0">
+            <div>
+              <h6>Watch</h6>
+              <p>202 Items</p>
+            </div>
+            <div>
+              <img
+                src="images/watch-4.jpg"
+                alt="camera"
+                className="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-center gap-4 shadow-sm py-3 mt-4 mt-sm-0">
+            <div>
+              <h6>Others</h6>
+              <p>402 Items</p>
+            </div>
+            <div>
+              <img
+                src="images/homeapp.jpg"
+                alt="camera"
+                className="img-fluid rounded-circle"
+              />
             </div>
           </div>
         </div>

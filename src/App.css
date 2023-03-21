@@ -169,7 +169,8 @@ footer .input-group-text {
 }
 /* FOOTER PART ENDS HERE */
 
-/* HOME PAGE */
+/* -------------HOME PAGE------------- */
+/* BANNER SECTION */
 .main-banner-content,
 .small-banner-content {
   width: 100%;
@@ -216,38 +217,22 @@ footer .input-group-text {
   color: var(--color-131921);
   letter-spacing: 0.4px;
 }
+/* BANNER SECTION ENDS HERE */
 
-/* section 2 */
+/* SERVICE SECTION */
 .home-wrapper-2 {
   background-color: var(--color-f5f5f7);
 }
-/* section 2 ends here */
+/* SERVICE SECTION ENDS HERE */
 
-/* categories section */
-.categories > div {
-  width: 24%;
-  padding: 10px 10px 10px 20px;
+/* CATEGORIES SECTION */
+.categories .section-heading {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
 }
-.categories > div > div {
-  width: 60%;
-}
-.categories > div:nth-child(1),
-.categories > div:nth-child(2),
-.categories > div:nth-child(3),
-.categories > div:nth-child(4) {
-  border-bottom: 1px solid var(--color-ededed);
-}
-.categories > div:nth-child(1),
-.categories > div:nth-child(2),
-.categories > div:nth-child(3),
-.categories > div:nth-child(5),
-.categories > div:nth-child(6),
-.categories > div:nth-child(7) {
-  border-right: 1px solid var(--color-ededed);
-}
-/* categories section ends here */
-
-/* HOME PAGE ENDS HERE */
+/* CATEGORIES SECTION ENDS HERE */
+/* -------------HOME PAGE ENDS HERE------------- */
 
 /* BLOG PART */
 .blog-card {
