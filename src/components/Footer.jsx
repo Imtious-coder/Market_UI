@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      {/* <footer className="py-4">
+      <footer className="py-4">
         <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-5">
@@ -131,7 +131,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </footer> */}
+      </footer>
     </>
   );
 };
