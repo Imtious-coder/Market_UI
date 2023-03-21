@@ -247,15 +247,23 @@ const Home = () => {
       <Container class1="featured-wrapper home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
-            <h3 className="section-heading">Featured Collections</h3>
+            <h3 className="section-heading text-center text-sm-start">Featured Collections</h3>
           </div>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
         </div>
       </Container>
-      <Container class1="famous-wrapper home-wrapper-2 py-5">
+      {/* <Container class1="famous-wrapper home-wrapper-2 py-5">
         <div className="row">
           <div className="col-3">
             <div className="famous-card position-relative">
@@ -370,7 +378,7 @@ const Home = () => {
             <BlogCard />
           </div>
         </div>
-      </Container>
+      </Container> */}
     </>
   );
 };

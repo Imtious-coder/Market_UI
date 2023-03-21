@@ -299,9 +299,6 @@ footer .input-group-text {
 .product-card:hover .action-bar {
   right: 13px;
 }
-.product-card .product-image {
-  height: 270px;
-}
 .product-card .product-image img {
   object-fit: contain;
 }
