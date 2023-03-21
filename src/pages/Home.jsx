@@ -107,23 +107,28 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Container class1="home-wrapper-2 py-5">
-        <div className="row">
-          <div className="col-12">
-            <div className="services d-flex align-items-center justify-content-between">
-              {services?.map((service, index) => {
-                return (
-                  <div key={index} className="d-flex align-items-center gap-15">
-                    <img src={service.image} alt="services" />
-                    <div>
-                      <h6>{service.title}</h6>
-                      <p className="mb-0">{service.tagline}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+      <Container class1="home-wrapper-2 py-4">
+        <div className="row ps-4 ps-sm-0">
+          {services?.map((service, index) => {
+            return (
+              <div
+                key={index}
+                className="col-12 col-sm-6 col-md-3 d-flex flex-md-column align-items-center gap-4 gap-sm-3 my-3"
+              >
+                <div>
+                  <img
+                    src={service.image}
+                    alt="services"
+                    className="img-fluid"
+                  />
+                </div>
+                <div>
+                  <h6 className="text-md-center">{service.title}</h6>
+                  <p className="mb-0 text-md-center">{service.tagline}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </Container>
       <Container class1="home-wrapper-2 py-5">
