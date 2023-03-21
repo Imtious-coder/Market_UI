@@ -46,8 +46,11 @@ const Header = () => {
                   aria-label="Search Product Here..."
                   aria-describedby="basic-addon2"
                 />
-                <span className="input-group-text p-3" id="basic-addon2">
-                  <BsSearch className="fs-6" />
+                <span
+                  className="input-group-text py-2 px-3 border-0"
+                  id="basic-addon2"
+                >
+                  <BsSearch className="fs-6 text-white" />
                 </span>
               </div>
             </div>
