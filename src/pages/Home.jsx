@@ -10,81 +10,97 @@ import { services } from "../utils/Data";
 const Home = () => {
   return (
     <>
-      <Container class1="home-wrapper-1 py-5">
+      <Container class1="home-wrapper-1 py-3 pb-lg-5">
         <div className="row">
-          <div className="col-6">
+          <div className="col-12 col-lg-6">
             <div className="main-banner position-relative">
               <img
                 src="images/main-banner-1.jpg"
                 alt="main-banner"
-                className="img-fluid rounded-3"
+                className="img-fluid w-100 rounded-3"
               />
-              <div className="main-banner-content position-absolute">
-                <h4>SUPERCHARGED FOR PROS</h4>
-                <h5>iPad s13+ pro</h5>
-                <p>From $999.00 or $41.62/mo.</p>
-                <Link to="/" className="button">
-                  BUY NOW
-                </Link>
+              <div className="main-banner-content d-flex justify-content-center justify-content-md-start position-absolute ps-md-5">
+                <div className="d-flex flex-column justify-content-center">
+                  <h4>SUPERCHARGED FOR PROS</h4>
+                  <h5>HM 13 Pro.</h5>
+                  <p>1999 BDT Only</p>
+                  <div>
+                    <Link to="/" className="button">
+                      BUY NOW
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-6">
-            <div className="d-flex flex-wrap gap-10 justify-content-between align-items-center">
-              <div className="small-banner position-relative">
-                <img
-                  src="images/catbanner-01.jpg"
-                  alt="main-banner"
-                  className="img-fluid rounded-3"
-                />
-                <div className="small-banner-content position-absolute">
-                  <h4>BEST SALE</h4>
-                  <h5>iPad s13+ pro</h5>
-                  <p>
-                    From $1699.00 <br /> or $64.62/mo.
-                  </p>
+          <div className="col-12 col-lg-6 mt-sm-2 mt-md-4 mt-lg-0">
+            <div className="row">
+              <div className="col-12 col-sm-6 mt-2 mt-lg-0">
+                <div className="small-banner position-relative">
+                  <img
+                    src="images/catbanner-01.jpg"
+                    alt="main-banner"
+                    className="img-fluid w-100 rounded-3"
+                  />
+                  <div className="small-banner-content d-flex justify-content-center justify-content-md-start position-absolute ps-md-5">
+                    <div className="d-flex flex-column justify-content-center">
+                      <h4 className="mb-2">BEST SALE</h4>
+                      <h5>MackBook pro</h5>
+                      <p>355,000 BDT Only</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="small-banner position-relative">
-                <img
-                  src="images/catbanner-03.jpg"
-                  alt="main-banner"
-                  className="img-fluid rounded-3"
-                />
-                <div className="small-banner-content position-absolute">
-                  <h4>NEW ARRIVAL</h4>
-                  <h5>Buy IPad Air</h5>
-                  <p>
-                    From $599.00 or <br /> $49.91/mo. for 12 mon. *
-                  </p>
+              <div className="col-12 col-sm-6 my-2 mt-lg-0">
+                <div className="small-banner w-100 position-relative">
+                  <img
+                    src="images/catbanner-03.jpg"
+                    alt="main-banner"
+                    className="img-fluid w-100 rounded-3"
+                  />
+                  <div className="small-banner-content d-flex justify-content-center justify-content-md-start position-absolute ps-md-5">
+                    <div className="d-flex flex-column justify-content-center">
+                      <h4 className="mb-2">NEW ARRIVAL</h4>
+                      <h5>Buy IPad Air</h5>
+                      <p>185,000 BDT Only</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="small-banner position-relative">
-                <img
-                  src="images/catbanner-02.jpg"
-                  alt="main-banner"
-                  className="img-fluid rounded-3"
-                />
-                <div className="small-banner-content position-absolute">
-                  <h4>15% OFF</h4>
-                  <h5>Smartwatch 7</h5>
-                  <p>
-                    Shop the latest brand <br /> styles and colors.
-                  </p>
+              <div className="col-12 col-sm-6 mt-sm-2 mt-md-3">
+                <div className="small-banner w-100 position-relative">
+                  <img
+                    src="images/catbanner-02.jpg"
+                    alt="main-banner"
+                    className="img-fluid w-100 rounded-3"
+                  />
+                  <div className="small-banner-content d-flex justify-content-center justify-content-md-start position-absolute ps-md-5">
+                    <div className="d-flex flex-column justify-content-center">
+                      <h4 className="mb-2">15% OFF</h4>
+                      <h5>Smartwatch 7</h5>
+                      <p>
+                        Shop the latest brand <br /> styles and colors.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="small-banner position-relative">
-                <img
-                  src="images/catbanner-04.jpg"
-                  alt="main-banner"
-                  className="img-fluid rounded-3"
-                />
-                <div className="small-banner-content position-absolute">
-                  <h4>FREE ENGRAVING</h4>
-                  <h5>AirPods Max</h5>
-                  <p>
-                    Hight-fidelity playback & <br /> ultra low distortion.
-                  </p>
+              <div className="col-12 col-sm-6 my-2 my-md-3">
+                <div className="small-banner w-100 position-relative">
+                  <img
+                    src="images/catbanner-04.jpg"
+                    alt="main-banner"
+                    className="img-fluid w-100 rounded-3"
+                  />
+                  <div className="small-banner-content d-flex justify-content-center justify-content-md-start position-absolute ps-md-5">
+                    <div className="d-flex flex-column justify-content-center">
+                      <h4 className="mb-2">FREE ENGRAVING</h4>
+                      <h5>AirPods Max</h5>
+                      <p>
+                        Hight-fidelity playback & <br /> ultra low distortion.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

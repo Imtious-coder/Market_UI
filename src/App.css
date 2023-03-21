@@ -170,11 +170,15 @@ footer .input-group-text {
 /* FOOTER PART ENDS HERE */
 
 /* HOME PAGE */
-.main-banner-content {
-  top: 15%;
-  left: 5%;
+.main-banner-content,
+.small-banner-content {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
 }
-.main-banner-content h4 {
+.main-banner-content h4,
+.small-banner-content h4 {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -196,21 +200,8 @@ footer .input-group-text {
   color: var(--color-131921);
   letter-spacing: 0.4px;
 }
-.small-banner {
-  width: 49%;
-}
-.small-banner-content {
-  top: 15%;
-  left: 10%;
-}
 .small-banner-content h4 {
   font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: var(--color-bf4800);
-  margin: 0 0 12px;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
 }
 .small-banner-content h5 {
   font-size: 22px;
