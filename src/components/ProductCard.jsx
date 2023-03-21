@@ -38,7 +38,7 @@ const ProductCard = ({ grid }) => {
             />
             <img
               src="/images/watch-1.jpeg"
-              className="img-fluid"
+              className="img-fluid w-100"
               alt="product_image"
             />
           </div>

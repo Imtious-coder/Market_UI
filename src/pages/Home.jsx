@@ -311,7 +311,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Container class1="special-wrapper home-wrapper-2 py-5">
+      {/* <Container class1="special-wrapper home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading">Special Products</h3>
@@ -380,7 +380,7 @@ const Home = () => {
             <BlogCard />
           </div>
         </div>
-      </Container>
+      </Container> */}
     </>
   );
 };
