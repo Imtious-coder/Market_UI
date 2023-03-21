@@ -1,11 +1,14 @@
 import React from "react";
+import { AiFillHeart, AiOutlineUser } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
+import { FaShoppingCart } from "react-icons/fa";
+import { TiArrowRepeat } from "react-icons/ti";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
-      <header className="header-top-strip py-3">
+      <header className="header-top-strip py-3 d-none d-sm-block">
         <div className="container-xxl">
           <div className="row">
             <div className="col-6">
@@ -27,14 +30,14 @@ const Header = () => {
       <header className="header-upper py-3">
         <div className="container-xxl">
           <div className="row align-items-center">
-            <div className="col-2">
-              <h1>
+            <div className="col-12 col-sm-3 col-lg-2">
+              <h1 className="text-center text-sm-start mb-3 mb-sm-0">
                 <Link to="/" className="text-white">
                   Market.
                 </Link>
               </h1>
             </div>
-            <div className="col-5">
+            <div className="col-12 col-sm-9 col-lg-5">
               <div className="input-group">
                 <input
                   type="text"
@@ -48,16 +51,17 @@ const Header = () => {
                 </span>
               </div>
             </div>
-            <div className="col-5">
+            <div className="col-12 col-lg-5 mt-3 mt-lg-0">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
                   <Link
                     to="/compare-product"
-                    className="d-flex align-items-center gap-10"
+                    className="d-flex align-items-center"
+                    title="Compare Products"
                   >
-                    <img src="/images/compare.svg" alt="compare" />
-                    <p className="mb-0">
-                      Compare <br /> Products
+                    <p className="mb-0 text-white hvr-color1">
+                      <TiArrowRepeat className="fs-2 me-sm-1" />
+                      Compare
                     </p>
                   </Link>
                 </div>
@@ -65,10 +69,11 @@ const Header = () => {
                   <Link
                     to="/wishlist"
                     className="d-flex align-items-center gap-10"
+                    title="List of your favourite products"
                   >
-                    <img src="/images/wishlist.svg" alt="wishlist" />
-                    <p className="mb-0">
-                      Favopurite <br /> Wishlist
+                    <p className="mb-0 text-white hvr-color1">
+                      <AiFillHeart className="fs-4 me-sm-2" />
+                      Favourite
                     </p>
                   </Link>
                 </div>
@@ -76,20 +81,22 @@ const Header = () => {
                   <Link
                     to="/login"
                     className="d-flex align-items-center gap-10"
+                    title="Login / Sign up"
                   >
-                    <img src="/images/user.svg" alt="user" />
-                    <p className="mb-0">
-                      Log in <br /> My account
+                    <p className="mb-0 text-white hvr-color1">
+                      <AiOutlineUser className="fs-4 me-sm-2" />
+                      Log in
                     </p>
                   </Link>
                 </div>
                 <div>
-                  <Link to="/cart" className="d-flex align-items-center gap-10">
-                    <img src="/images/cart.svg" alt="cart" />
-                    <div className="d-flex flex-column gap-10">
-                      <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-0">$ 500</p>
-                    </div>
+                  <Link
+                    to="/cart"
+                    className="d-flex align-items-center"
+                    title="Cart"
+                  >
+                    <FaShoppingCart className="fs-3 me-sm-2 hvr-color1" />
+                    <p>10</p>
                   </Link>
                 </div>
               </div>
@@ -101,44 +108,71 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <div className="menu-bottom d-flex align-items-center gap-30">
-                <div>
-                  <div className="dropdown">
-                    <button
-                      className="d-flex align-items-center btn btn-secondary dropdown-toggle bg-transparent border-0"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <span className="me-5 d-inline-block">
-                        Shop Categories
-                      </span>
-                    </button>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <Link className="dropdown-item text-white" to="/">
-                          Action
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item text-white" to="/">
-                          Another action
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item text-white" to="/">
-                          Something else here
-                        </Link>
-                      </li>
-                    </ul>
+              <div className="menu-bottom d-flex align-items-center gap-sm-5">
+                <div className="row">
+                  <div className="col-12 col-sm-6">
+                    <div className="dropdown d-flex justify-content-center justify-content-sm-start">
+                      <button
+                        className="d-flex align-items-center btn btn-secondary dropdown-toggle bg-transparent border-0"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <span className="me-2 me-md-5 d-inline-block">
+                          Shop Categories
+                        </span>
+                      </button>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <Link
+                            className="dropdown-item text-white"
+                            to="/store"
+                          >
+                            Phone
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="dropdown-item text-white"
+                            to="/store"
+                          >
+                            Laptop
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="dropdown-item text-white"
+                            to="/store"
+                          >
+                            Car
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="dropdown-item text-white"
+                            to="/store"
+                          >
+                            Bick
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div className="menu-links">
-                  <div className="d-flex align-items-center gap-15">
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/store">Our Store</NavLink>
-                    <NavLink to="/blog">Blogs</NavLink>
-                    <NavLink to="/contact">Contact</NavLink>
+                  <div className="col-12 col-sm-6 mb-3 mb-sm-0 d-flex align-itmes-center justify-content-center justify-content-sm-start">
+                    <div className="d-flex align-items-center gap-30">
+                      <NavLink to="/" className="hvr-color1">
+                        Home
+                      </NavLink>
+                      <NavLink to="/store" className="hvr-color1">
+                        Store
+                      </NavLink>
+                      <NavLink to="/blog" className="hvr-color1">
+                        Blogs
+                      </NavLink>
+                      <NavLink to="/contact" className="hvr-color1">
+                        Contact
+                      </NavLink>
+                    </div>
                   </div>
                 </div>
               </div>

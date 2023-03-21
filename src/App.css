@@ -87,6 +87,10 @@ a:hover {
   background-color: var(--color-232f3e);
 }
 
+.hvr-color1:hover {
+  color: var(--color-febd69) !important;
+}
+
 /* HEADER PART  */
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);
