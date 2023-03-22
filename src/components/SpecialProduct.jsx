@@ -52,7 +52,7 @@ const SpecialProduct = () => {
               <p className="text-center text-sm-start text-secondary">
                 Products: 5
               </p>
-              <div className="progress">
+              <div className="progress rounded-pill">
                 <div
                   className="progress-bar bg-info progress-bar-striped progress-bar-animated"
                   role="progressbar"

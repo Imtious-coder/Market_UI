@@ -162,7 +162,7 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="col-12 col-sm-6 mb-3 mb-sm-0 d-flex align-itmes-center justify-content-center justify-content-sm-start">
-                    <div className="d-flex align-items-center gap-30">
+                    <div className="d-flex align-items-center gap-4 gap-md-5">
                       <NavLink to="/" className="hvr-color1">
                         Home
                       </NavLink>

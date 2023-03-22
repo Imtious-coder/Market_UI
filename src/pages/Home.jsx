@@ -21,9 +21,9 @@ const Home = () => {
               />
               <div className="main-banner-content d-flex justify-content-center justify-content-md-start position-absolute ps-md-5">
                 <div className="d-flex flex-column justify-content-center">
-                  <h4>SUPERCHARGED FOR PROS</h4>
-                  <h5>HM 13 Pro.</h5>
-                  <p>1999 BDT Only</p>
+                  <h4 className="mb-0 mb-sm-3">SUPERCHARGED FOR PROS</h4>
+                  <h5 className="mb-0 mb-sm-3">HM 13 Pro.</h5>
+                  <p className="mb-0 mb-sm-3">1999 BDT Only</p>
                   <div>
                     <Link to="/" className="button">
                       BUY NOW
@@ -244,7 +244,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Container class1="featured-wrapper home-wrapper-2 py-5">
+      <Container class1="home-wrapper-2 featured-wrapper py-5">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading text-center text-sm-start">
@@ -265,7 +265,7 @@ const Home = () => {
           <ProductCard />
         </div>
       </Container>
-      <Container class1="famous-wrapper home-wrapper-2 py-md-5">
+      <Container class1="home-wrapper-2 famous-wrapper py-md-5">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading text-center text-sm-start">
@@ -314,7 +314,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Container class1="special-wrapper home-wrapper-2 py-5">
+      <Container class1="home-wrapper-2 special-wrapper py-5">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading text-center text-sm-start">
@@ -367,7 +367,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Container class1="blog-wrapper home-wrapper-2 py-5">
+      <Container class1="home-wrapper-2 blog-wrapper py-5">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading">Our Latest Blogs</h3>
