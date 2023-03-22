@@ -16,9 +16,7 @@ const SpecialProduct = () => {
           </div>
           <div className="col-12 special-product-content">
             <h5 className="brand text-center text-sm-start">Havels</h5>
-            <h6 className="title text-center text-sm-start mb-0">
-              SKM 3 Pro
-            </h6>
+            <h6 className="title text-center text-sm-start mb-0">SKM 3 Pro</h6>
             <div className="d-flex justify-content-center justify-content-sm-start">
               <ReactStars
                 count={5}
@@ -51,10 +49,12 @@ const SpecialProduct = () => {
               </div>
             </div>
             <div className="prod-count my-3">
-              <p className="text-center text-sm-start text-secondary">Products: 5</p>
-              <div class="progress">
+              <p className="text-center text-sm-start text-secondary">
+                Products: 5
+              </p>
+              <div className="progress">
                 <div
-                  class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                  className="progress-bar bg-info progress-bar-striped progress-bar-animated"
                   role="progressbar"
                   aria-label="Animated striped example"
                   aria-valuenow="75"
