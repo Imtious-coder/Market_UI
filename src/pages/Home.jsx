@@ -317,10 +317,12 @@ const Home = () => {
       <Container class1="special-wrapper home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
-            <h3 className="section-heading">Special Products</h3>
+            <h3 className="section-heading text-center text-sm-start">Special Products</h3>
           </div>
         </div>
         <div className="row">
+          <SpecialProduct />
+          <SpecialProduct />
           <SpecialProduct />
           <SpecialProduct />
           <SpecialProduct />
@@ -387,5 +389,7 @@ const Home = () => {
     </>
   );
 };
+
+// ...........DO NOT SAVE
 
 export default Home;
