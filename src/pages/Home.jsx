@@ -244,24 +244,13 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Container class1="home-wrapper-2 featured-wrapper py-5">
+      <Container class1="home-wrapper-2 featured-wrapper py-4 py-sm-5">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading text-center text-sm-start">
               Featured Collections
             </h3>
           </div>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
           <ProductCard />
         </div>
       </Container>
@@ -323,13 +312,6 @@ const Home = () => {
           </div>
         </div>
         <div className="row">
-          <SpecialProduct />
-          <SpecialProduct />
-          <SpecialProduct />
-          <SpecialProduct />
-          <SpecialProduct />
-          <SpecialProduct />
-          <SpecialProduct />
           <SpecialProduct />
         </div>
       </Container>
