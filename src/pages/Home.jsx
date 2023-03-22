@@ -272,7 +272,7 @@ const Home = () => {
               Famous Products
             </h3>
           </div>
-          <div className="col-12 col-sm-6 px-5 px-sm-3 px-md-2 px-lg-3 col-md-3 mb-3">
+          <div className="col-12 col-sm-6 px-4 px-sm-3 px-md-2 px-lg-3 col-md-3 mb-3">
             <div className="famous-card position-relative">
               <img className="" src="images/famouse-1.webp" alt="famous" />
               <div className="famous-card-content position-absolute px-4">
@@ -282,7 +282,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 px-5 px-sm-3 px-md-2 px-lg-3 col-md-3 mb-3">
+          <div className="col-12 col-sm-6 px-4 px-sm-3 px-md-2 px-lg-3 col-md-3 mb-3">
             <div className="famous-card position-relative">
               <img className="" src="images/famouse-2.webp" alt="famous" />
               <div className="famous-card-content position-absolute px-4">
@@ -292,7 +292,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 px-5 px-sm-3 px-md-2 px-lg-3 col-md-3 mb-3">
+          <div className="col-12 col-sm-6 px-4 px-sm-3 px-md-2 px-lg-3 col-md-3 mb-3">
             <div className="famous-card position-relative text-dark">
               <img className="" src="images/famous-3.webp" alt="famous" />
               <div className="famous-card-content position-absolute px-4">
@@ -302,7 +302,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 px-5 px-sm-3 px-md-2 px-lg-3 col-md-3">
+          <div className="col-12 col-sm-6 px-4 px-sm-3 px-md-2 px-lg-3 col-md-3">
             <div className="famous-card position-relative text-dark">
               <img className="" src="images/famouse-4.jpeg" alt="famous" />
               <div className="famous-card-content position-absolute px-4">
@@ -374,24 +374,11 @@ const Home = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-3">
-            <BlogCard />
-          </div>
-          <div className="col-3">
-            <BlogCard />
-          </div>
-          <div className="col-3">
-            <BlogCard />
-          </div>
-          <div className="col-3">
-            <BlogCard />
-          </div>
+          <BlogCard />
         </div>
       </Container>
     </>
   );
 };
-
-// ...........DO NOT SAVE
 
 export default Home;

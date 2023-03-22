@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SpecialProduct = () => {
   return (
-    <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 px-5 px-sm-3">
+    <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 px-4 px-sm-3">
       <div className="special-product-card">
         <div className="row">
           <div className="col-12">

@@ -9,7 +9,7 @@ const ProductCard = ({ grid }) => {
       className={`${
         location.pathname === "/store"
           ? `gr-${grid}`
-          : "col-12 col-sm-6 col-md-4 col-lg-3 px-5 px-sm-3 mb-3"
+          : "col-12 col-sm-6 col-md-4 col-lg-3 px-4 px-sm-3 mb-3"
       } `}
     >
       <Link
