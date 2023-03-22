@@ -1,65 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { blogData } from "../utils/Data";
 
 const BlogCard = () => {
-  const blogData = [
-    {
-      image: "images/blog-1.jpg",
-      date: "9 FEBRUARY 2022",
-      title: "A Beautiful Sunday Morning Renaissance",
-      description:
-        "You're Only Good As Your Last Collection. Which Is An Enormous Pressure. I think There Is Something About...",
-    },
-    {
-      image: "images/blog-1.jpg",
-      date: "9 FEBRUARY 2022",
-      title: "A Beautiful Sunday Morning Renaissance",
-      description:
-        "You're Only Good As Your Last Collection. Which Is An Enormous Pressure. I think There Is Something About...",
-    },
-    {
-      image: "images/blog-1.jpg",
-      date: "9 FEBRUARY 2022",
-      title: "A Beautiful Sunday Morning Renaissance",
-      description:
-        "You're Only Good As Your Last Collection. Which Is An Enormous Pressure. I think There Is Something About...",
-    },
-    {
-      image: "images/blog-1.jpg",
-      date: "9 FEBRUARY 2022",
-      title: "A Beautiful Sunday Morning Renaissance",
-      description:
-        "You're Only Good As Your Last Collection. Which Is An Enormous Pressure. I think There Is Something About...",
-    },
-    {
-      image: "images/blog-1.jpg",
-      date: "9 FEBRUARY 2022",
-      title: "A Beautiful Sunday Morning Renaissance",
-      description:
-        "You're Only Good As Your Last Collection. Which Is An Enormous Pressure. I think There Is Something About...",
-    },
-    {
-      image: "images/blog-1.jpg",
-      date: "9 FEBRUARY 2022",
-      title: "A Beautiful Sunday Morning Renaissance",
-      description:
-        "You're Only Good As Your Last Collection. Which Is An Enormous Pressure. I think There Is Something About...",
-    },
-    {
-      image: "images/blog-1.jpg",
-      date: "9 FEBRUARY 2022",
-      title: "A Beautiful Sunday Morning Renaissance",
-      description:
-        "You're Only Good As Your Last Collection. Which Is An Enormous Pressure. I think There Is Something About...",
-    },
-    {
-      image: "images/blog-1.jpg",
-      date: "9 FEBRUARY 2022",
-      title: "A Beautiful Sunday Morning Renaissance",
-      description:
-        "You're Only Good As Your Last Collection. Which Is An Enormous Pressure. I think There Is Something About...",
-    },
-  ];
   return (
     <>
       <div className="row m-0">
@@ -71,7 +14,7 @@ const BlogCard = () => {
             >
               <div className="blog-card">
                 <div className="card-image">
-                  <img src={image} className="img-fluid" alt="blog" />
+                  <img src={image} className="img-fluid w-100" alt="blog" />
                 </div>
                 <div className="blog-content">
                   <p className="date">{date}</p>

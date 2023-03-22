@@ -83,3 +83,34 @@ export const productData = [
     quantity: 2
   },
 ];
+
+export const blogData = [
+  {
+    image: "images/main-banner-1.jpg",
+    date: "TODAY",
+    title: "A Beautiful Sunday Morning Renaissance",
+    description:
+      "You're Only Good As Your Last Collection. Which Is An Enormous Pressure. I think There Is Something About...",
+  },
+  {
+    image: "images/catbanner-02.jpg",
+    date: "09 MARCH 2023",
+    title: "All Inside. Just One Tap to Enjoy",
+    description:
+      "I think There Is Something About. You're Only Good As Your Last Collection. Which Is An Enormous Pressure...",
+  },
+  {
+    image: "images/main-banner.jpg",
+    date: "09 MARCH 2023",
+    title: "Refresh Your Mind By Music & Be Happy",
+    description:
+      "Music Is The Only Thing That Can Chnage Someone's Thought In Just Few Seconds. Enjoy Listening Music...",
+  },
+  {
+    image: "images/catbanner-01.jpg",
+    date: "YESTERDAY",
+    title: "A Beautiful Sunday Morning Renaissance",
+    description:
+      "Only You Have The Rights To Choose The Best For You Just Click Read More To Learn More About This...",
+  },
+];
