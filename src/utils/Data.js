@@ -24,7 +24,7 @@ export const services = [
 export const productData = [
   {
     id: 1,
-    image: "images/watch.jpg",
+    image: "/images/watch.jpg",
     title: "SKM 3 Pro",
     description: "The best smart watch in the market. More than 50 features just in 100mm",
     price: "399",
@@ -36,7 +36,7 @@ export const productData = [
   },
   {
     id: 2,
-    image: "images/tab3.jpg",
+    image: "/images/tab3.jpg",
     title: "TAB 9+",
     description: "Latest smart tab for smart peoples. Enjoy the huge 12 GB RAM now.",
     price: "502",
@@ -48,7 +48,7 @@ export const productData = [
   },
   {
     id: 3,
-    image: "images/acc.jpg",
+    image: "/images/acc.jpg",
     title: "TWS PRO 3",
     description: "The best TWS at lowest price. 48 hrs of huge backup for nonstop music.",
     price: "501",
@@ -60,7 +60,7 @@ export const productData = [
   },
   {
     id: 4,
-    image: "images/speaker.jpg",
+    image: "/images/speaker.jpg",
     title: "Wireless Speaker",
     description: "Bluetooth 5.3 with a 80mm speaker. Fill the room with bad music.",
     price: "400",
@@ -72,7 +72,7 @@ export const productData = [
   },
   {
     id: 5,
-    image: "images/tab1.jpg",
+    image: "/images/tab1.jpg",
     title: "TAB 3",
     description: "Smart tab for kids. 2k+ science book available. Specially made for kids.",
     price: "403",
@@ -86,28 +86,28 @@ export const productData = [
 
 export const blogData = [
   {
-    image: "images/main-banner-1.jpg",
+    image: "/images/main-banner-1.jpg",
     date: "TODAY",
     title: "A Beautiful Sunday Morning Renaissance",
     description:
       "You're Only Good As Your Last Collection. Which Is An Enormous Pressure. I think There Is Something About...",
   },
   {
-    image: "images/catbanner-02.jpg",
+    image: "/images/catbanner-02.jpg",
     date: "09 MARCH 2023",
     title: "All Inside. Just One Tap to Enjoy",
     description:
       "I think There Is Something About. You're Only Good As Your Last Collection. Which Is An Enormous Pressure...",
   },
   {
-    image: "images/main-banner.jpg",
+    image: "/images/main-banner.jpg",
     date: "09 MARCH 2023",
     title: "Refresh Your Mind By Music & Be Happy",
     description:
       "Music Is The Only Thing That Can Chnage Someone's Thought In Just Few Seconds. Enjoy Listening The Music...",
   },
   {
-    image: "images/catbanner-01.jpg",
+    image: "/images/catbanner-01.jpg",
     date: "YESTERDAY",
     title: "A Beautiful Sunday Morning Renaissance",
     description:
