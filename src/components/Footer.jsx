@@ -8,13 +8,13 @@ const Footer = () => {
       <footer className="py-4">
         <div className="container-xxl">
           <div className="row align-items-center">
-            <div className="col-5">
-              <div className="footer-top-data d-flex gap-30 align-items-center">
+            <div className="col-12 col-md-6">
+              <div className="footer-top-data d-flex gap-4 align-items-center justify-content-center justify-content-md-start">
                 <img src="images/newsletter.png" alt="newsletter" />
                 <h2 className="mb-0 text-white">Sign up for Newsletter</h2>
               </div>
             </div>
-            <div className="col-7">
+            <div className="col-12 col-md-6 mt-4 mt-md-0">
               <div className="input-group">
                 <input
                   type="text"
@@ -34,24 +34,24 @@ const Footer = () => {
       <footer className="py-4">
         <div className="container-xxl text-white">
           <div className="row">
-            <div className="col-4">
+            <div className="col-6 col-md-3">
               <h4 className="mb-4">Contact Us</h4>
               <div className="footer-links d-flex flex-column">
                 <address className="fs-6">
-                  Shimpur, Engineer Bari, 3500 <br /> Chattogram, Bangladesh
+                  S***pur, E****eer Bari, 3**0 <br /> Chattogram, Bangladesh
                 </address>
                 <a href="tel:+8801935501610" className="d-block mb-2">
                   {" "}
-                  +8801635501610
+                  +880163****610
                 </a>
                 <a
                   href="mailto:iarafat386@gmail.com"
                   className="mt-2 d-block mb-2"
                 >
                   {" "}
-                  iarafat386@gmail.com
+                  im***s@gmail.com
                 </a>
-                <div className="social_icons d-flex align-items-center gap-30 mt-4">
+                <div className="social_icons d-flex align-items-center gap-3 gap-sm-4 mt-4">
                   <Link to="">
                     <BsLinkedin className="fs-4" />
                   </Link>
@@ -67,7 +67,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-6 col-md-3 ">
               <h4 className="mb-4">Information</h4>
               <div className="footer-links d-flex flex-column">
                 <Link className="py-2 mb-1" to="/privacy-policy">
@@ -87,13 +87,16 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-6 col-md-3 mt-5 mt-md-0">
               <h4 className="mb-4">Account</h4>
               <div className="footer-links d-flex flex-column">
-                <Link className="py-2 mb-1" to="/">
+                <Link className="py-2 mb-1" to="/login">
+                  Create Account
+                </Link>
+                <Link className="py-2 mb-1" to="/about">
                   About Us
                 </Link>
-                <Link className="py-2 mb-1" to="/">
+                <Link className="py-2 mb-1" to="/faq">
                   FAQ
                 </Link>
                 <Link className="py-2 mb-1" to="/contact">
@@ -101,19 +104,19 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-2">
+            <div className="col-6 col-md-3 mt-5 mt-md-0">
               <h4 className="mb-4">Quick Links</h4>
               <div className="footer-links d-flex flex-column">
-                <Link className="py-2 mb-1" to="/">
+                <Link className="py-2 mb-1" to="/store">
                   Laptops
                 </Link>
-                <Link className="py-2 mb-1" to="/">
+                <Link className="py-2 mb-1" to="/store">
                   Headphones
                 </Link>
-                <Link className="py-2 mb-1" to="/">
+                <Link className="py-2 mb-1" to="/store">
                   Tablets
                 </Link>
-                <Link className="py-2 mb-1" to="/">
+                <Link className="py-2 mb-1" to="/store">
                   Watch
                 </Link>
               </div>
@@ -121,7 +124,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <footer className="py-4">
+      <footer className="py-3 py-xxl-4">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
