@@ -104,13 +104,13 @@ export const blogData = [
     date: "09 MARCH 2023",
     title: "Refresh Your Mind By Music & Be Happy",
     description:
-      "Music Is The Only Thing That Can Chnage Someone's Thought In Just Few Seconds. Enjoy Listening Music...",
+      "Music Is The Only Thing That Can Chnage Someone's Thought In Just Few Seconds. Enjoy Listening The Music...",
   },
   {
     image: "images/catbanner-01.jpg",
     date: "YESTERDAY",
     title: "A Beautiful Sunday Morning Renaissance",
     description:
-      "Only You Have The Rights To Choose The Best For You Just Click Read More To Learn More About This...",
+      "Only You Have The Rights To Choose The Best For You. Just Click Read More Button To Learn More About This...",
   },
 ];
