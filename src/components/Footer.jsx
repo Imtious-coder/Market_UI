@@ -1,5 +1,5 @@
 import React from "react";
-import { BsGithub, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
+import { BsFacebook, BsGithub, BsLinkedin, BsMedium } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -52,17 +52,17 @@ const Footer = () => {
                   im***s@gmail.com
                 </a>
                 <div className="social_icons d-flex align-items-center gap-3 gap-sm-4 mt-4">
-                  <Link to="">
+                  <Link to="https://www.facebook.com/imtious.midul/" target={"_blank"}>
+                    <BsFacebook className="fs-4" />
+                  </Link>
+                  <Link to="https://www.linkedin.com/in/imtious/" target={"_blank"}>
                     <BsLinkedin className="fs-4" />
                   </Link>
-                  <Link to="">
-                    <BsInstagram className="fs-4" />
-                  </Link>
-                  <Link to="">
+                  <Link to="https://github.com/Imtious-coder" target={"_blank"}>
                     <BsGithub className="fs-4" />
                   </Link>
-                  <Link to="">
-                    <BsYoutube className="fs-4" />
+                  <Link to="https://medium.com/@imtious.islam.me" target={"_blank"}>
+                    <BsMedium className="fs-4" />
                   </Link>
                 </div>
               </div>
