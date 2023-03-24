@@ -29,6 +29,7 @@ const SingleProduct = () => {
   };
   return (
     <>
+      {/*  */}
       <Meta title={"Product Name"} />
       <BreadCrumb title="Product Name" />
       <Container class1="main-product-wrapper home-wrapper-2 py-2 py-md-4">
