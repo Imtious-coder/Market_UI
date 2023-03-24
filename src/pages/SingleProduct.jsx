@@ -125,9 +125,7 @@ const SingleProduct = () => {
                 </div>
                 <div className="d-flex align-items-center gap-10 my-2">
                   <h3 className="product-heading">Tags :</h3>
-                  <p className="product-data">
-                    Watch - Laptop - Mobile - Smart watch
-                  </p>
+                  <p className="product-data">Watch - Mobile - Smart watch</p>
                 </div>
                 <div className="d-flex align-items-center gap-10 my-2">
                   <h3 className="product-heading">Availablity :</h3>
@@ -242,11 +240,11 @@ const SingleProduct = () => {
                     <ReactStars
                       count={5}
                       size={24}
-                      value={4}
+                      value={5}
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <p className="mb-0">Based on 7 reviews</p>
+                    <p className="mb-0">Based on 2 reviews</p>
                   </div>
                 </div>
                 {orderedProduct ? (
@@ -269,7 +267,7 @@ const SingleProduct = () => {
                     <ReactStars
                       count={5}
                       size={24}
-                      value={4}
+                      value={5}
                       edit={true}
                       activeColor="#ffd700"
                     />
