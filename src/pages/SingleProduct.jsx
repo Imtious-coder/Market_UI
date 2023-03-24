@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { TbGitCompare } from "react-icons/tb";
+import { GlassMagnifier } from "react-image-magnifiers";
 import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
 import Image2 from "../Assets/Images/watchP.jpg";
@@ -35,11 +36,14 @@ const SingleProduct = () => {
           <div className="col-12 col-md-6 col-lg-6">
             <div className="row">
               <div className="col-12">
-                <div className="main-image px-sm-5 px-md-0">
-                  <img
-                    src={image}
+                <div className="px-sm-5 px-md-0">
+                  <GlassMagnifier
+                    imageSrc={image}
+                    largeImageSrc={image}
+                    square={true}
+                    magnifierSize="40%"
                     alt="product_Image"
-                    className="w-100 h-100 main-image"
+                    className="w-100 h-100 img-fluid"
                   />
                 </div>
               </div>
@@ -93,7 +97,7 @@ const SingleProduct = () => {
                 </h3>
               </div>
               <div className="border-bottom pb-3 pt-1">
-                <p className="price mb-0">$ 199.00</p>
+                <p className="price mb-0">2909 BDT</p>
                 <div className="d-flex gap-10 align-items-center">
                   <ReactStars
                     count={5}
@@ -101,8 +105,8 @@ const SingleProduct = () => {
                     value={4}
                     edit={false}
                     activeColor="#ffd700"
-                  />{" "}
-                  -<p className="mb-0 review-count">&#40; 7 reviews &#41;</p>
+                  />
+                  -<p className="mb-0 review-count">&#40; 2 reviews &#41;</p>
                 </div>
                 <a href="#review">Write a review</a>
               </div>
