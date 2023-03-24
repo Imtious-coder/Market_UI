@@ -38,7 +38,7 @@ const Home = () => {
                     <h5 className="mb-0 mb-sm-3 text-start">HM 13+ Pro.</h5>
                     <p className="mb-0 mb-sm-3 text-start">1999 BDT Only</p>
                     <div className="d-flex justify-start mt-2">
-                      <Link to="/" className="button">
+                      <Link to="/" className="button py-2 py-sm-3 px-4 px-sm-5">
                         BUY NOW
                       </Link>
                     </div>
