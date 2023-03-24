@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { TbGitCompare } from "react-icons/tb";
 import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
+import Image2 from "../Assets/Images/watchP.jpg";
+import Image1 from "../Assets/Images/watchP1.jpg";
+import Image3 from "../Assets/Images/watchP2.webp";
+import Image4 from "../Assets/Images/watchP4.jpg";
+import Image from "../Assets/Images/watchPMain.jpg";
 import BreadCrumb from "../components/BreadCrumb";
 import Color from "../components/Color";
 import Container from "../components/Container";
@@ -10,7 +15,7 @@ import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 
 const SingleProduct = () => {
-  // const props = {width:400, height:500, zoomWidth:500, img:"/images/watch.jpg"};
+  const [image, setImage] = useState(Image);
   const orderedProduct = false;
   const copyToClipboard = (text) => {
     console.log("text", text);
@@ -25,55 +30,66 @@ const SingleProduct = () => {
     <>
       <Meta title={"Product Name"} />
       <BreadCrumb title="Product Name" />
-      <Container class1="main-product-wrapper home-wrapper-2 py-5">
+      <Container class1="main-product-wrapper home-wrapper-2 py-2 py-md-4">
         <div className="row">
-          <div className="col-6">
-            <div className="main-product-image">
-              <div className="">
-                {/* <ReactImageZoom {...props} /> */}
-                <img
-                  src="/images/watch.jpg"
-                  className="img-fluid"
-                  alt="watch"
-                />
+          <div className="col-12 col-md-6 col-lg-6">
+            <div className="row">
+              <div className="col-12">
+                <div className="main-image px-sm-5 px-md-0">
+                  <img
+                    src={image}
+                    alt="product_Image"
+                    className="w-100 h-100 main-image"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="other-product-images d-flex gap-3 flex-wrap">
-              <div className="">
-                <img
-                  src="/images/watch.jpg"
-                  className="img-fluid"
-                  alt="watch"
-                />
+              <div className="col-3 d-flex justify-content-center pt-3 pt-sm-5">
+                <div>
+                  <img
+                    onClick={() => setImage(Image1)}
+                    src={Image1}
+                    alt="product_Image"
+                    className="other-images border"
+                  />
+                </div>
               </div>
-              <div className="">
-                <img
-                  src="/images/watch.jpg"
-                  className="img-fluid"
-                  alt="watch"
-                />
+              <div className="col-3 d-flex justify-content-center pt-3 pt-sm-5">
+                <div>
+                  <img
+                    onClick={() => setImage(Image2)}
+                    src={Image2}
+                    alt="product_Image"
+                    className="other-images border"
+                  />
+                </div>
               </div>
-              <div className="">
-                <img
-                  src="/images/watch.jpg"
-                  className="img-fluid"
-                  alt="watch"
-                />
+              <div className="col-3 d-flex justify-content-center pt-3 pt-sm-5">
+                <div>
+                  <img
+                    onClick={() => setImage(Image3)}
+                    src={Image3}
+                    alt="product_Image"
+                    className="other-images border"
+                  />
+                </div>
               </div>
-              <div className="">
-                <img
-                  src="/images/watch.jpg"
-                  className="img-fluid"
-                  alt="watch"
-                />
+              <div className="col-3 d-flex justify-content-center pt-3 pt-sm-5">
+                <div>
+                  <img
+                    onClick={() => setImage(Image4)}
+                    src={Image4}
+                    alt="product_Image"
+                    className="other-images border"
+                  />
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-12 col-md-6 mt-4 mt-sm-5 mt-md-0">
             <div className="main-product-details">
               <div className="border-bottom">
                 <h3 className="title">
-                  Kids Smartwatch Bulk 10 Pck Multi Color For Students.
+                  Silver Stainless Steel Case with Sport Band
                 </h3>
               </div>
               <div className="border-bottom pb-3 pt-1">
@@ -134,22 +150,26 @@ const SingleProduct = () => {
                   <h3 className="product-heading">Color :</h3>
                   <Color />
                 </div>
-                <div className="d-flex align-items-center gap-10 my-3">
-                  <h3 className="product-heading">Quantity :</h3>
-                  <div>
-                    <input
-                      type="number"
-                      name=""
-                      placeholder="0"
-                      min={1}
-                      max={20}
-                      className="form-control"
-                      style={{ width: "70px", height: "30px" }}
-                    />
+                <div className="row my-3">
+                  <div className="col-12 d-flex align-items-center">
+                    <h3 className="product-heading me-2">Quantity :</h3>
+                    <div>
+                      <input
+                        type="number"
+                        name=""
+                        placeholder="0"
+                        min={1}
+                        max={20}
+                        className="form-control"
+                        style={{ width: "70px", height: "30px" }}
+                      />
+                    </div>
                   </div>
-                  <div className="d-flex align-items-center gap-10 ms-4">
-                    <button className="button">ADD TO CART</button>
-                    <button className="button2">Buy It Now</button>
+                  <div className="col-12 my-3">
+                    <div className="d-flex align-items-center gap-10">
+                      <button className="button">ADD TO CART</button>
+                      <button className="button2">Buy It Now</button>
+                    </div>
                   </div>
                 </div>
                 <div className="d-flex align-items-center gap-30 my-4">
@@ -174,13 +194,14 @@ const SingleProduct = () => {
                     <strong>5-10 business days!</strong>
                   </p>
                 </div>
-                <div className="d-flex align-items-center gap-10 my-3">
-                  <h3 className="product-heading">Copy Product Link :</h3>
+                <div className="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-10 my-3">
+                  <h3 className="product-heading mb-0">Copy Product Link :</h3>
                   <a
                     href="#test"
                     onClick={() => {
                       copyToClipboard("https://market.com/product/watch");
                     }}
+                    className="mb-0"
                   >
                     https://market.com/product/watch
                   </a>
@@ -195,16 +216,12 @@ const SingleProduct = () => {
           <div className="col-12">
             <h4>Description</h4>
             <p className="bg-white p-3">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for 'lorem ipsum' will
-              uncover many web sites still in their infancy. Various versions
-              have evolved over the years, sometimes by accident, sometimes on
-              purpose (injected humour and the like
+              The stainless steel case is durable and polished to a shiny,
+              mirror-like finish. The Sport Band is made from a durable yet
+              surprisingly soft high-performance fluoroelastomer with an
+              innovative pin-and-tuck closure. See even more band types. Try
+              different case materials. Express your personal style in the Apple
+              Watch Studio. Only at Apple.
             </p>
           </div>
         </div>
