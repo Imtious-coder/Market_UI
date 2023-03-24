@@ -164,6 +164,12 @@ a:hover {
   background: transparent;
   color: var(--color-febd69) !important;
 }
+@media only screen and (max-width: 350px) {
+  .header-bottom .navigations {
+    font-size: 12px;
+  }
+}
+
 /* HEADER PART ENDS HERE */
 
 /* FOOTER PART */

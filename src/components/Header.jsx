@@ -8,7 +8,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <header className="header-top-strip py-3 d-none d-sm-block">
+      <header className="header-top-strip py-3 d-none d-md-block">
         <div className="container-xxl">
           <div className="row">
             <div className="col-6">
@@ -27,11 +27,11 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <header className="header-upper py-3">
+      <header className="header-upper pt-3 pb-sm-3">
         <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-12 col-sm-3 col-lg-2">
-              <h1 className="text-center text-sm-start mb-3 mb-sm-0">
+              <h1 className="text-center text-sm-start mb-2 mb-sm-0">
                 <Link to="/" className="text-white">
                   Market.
                 </Link>
@@ -41,20 +41,20 @@ const Header = () => {
               <div className="input-group">
                 <input
                   type="text"
-                  className="form-control py-2"
+                  className="form-control py-1 py-sm-2"
                   placeholder="Search Product Here..."
                   aria-label="Search Product Here..."
                   aria-describedby="basic-addon2"
                 />
                 <span
-                  className="input-group-text py-2 px-3 border-0"
+                  className="input-group-text bg-transparent py-2 px-3 border"
                   id="basic-addon2"
                 >
                   <BsSearch className="fs-6 text-white" />
                 </span>
               </div>
             </div>
-            <div className="col-12 col-lg-5 mt-3 mt-lg-0">
+            <div className="col-12 col-lg-5 mt-2 mt-sm-3 mt-lg-0">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
                   <Link
@@ -62,8 +62,8 @@ const Header = () => {
                     className="d-flex align-items-center"
                     title="Compare Products"
                   >
-                    <p className="mb-0 text-white hvr-color1">
-                      <TiArrowRepeat className="fs-2 me-sm-1" />
+                    <TiArrowRepeat className="fs-2 me-sm-1" />
+                    <p className="mb-0 text-white hvr-color1 d-none d-sm-block">
                       Compare
                     </p>
                   </Link>
@@ -74,8 +74,8 @@ const Header = () => {
                     className="d-flex align-items-center gap-10"
                     title="List of your favourite products"
                   >
-                    <p className="mb-0 text-white hvr-color1">
-                      <AiFillHeart className="fs-4 me-sm-2" />
+                    <AiFillHeart className="fs-4 me-sm-2" />
+                    <p className="mb-0 text-white hvr-color1 d-none d-sm-block">
                       Favourite
                     </p>
                   </Link>
@@ -86,8 +86,8 @@ const Header = () => {
                     className="d-flex align-items-center gap-10"
                     title="Login / Sign up"
                   >
-                    <p className="mb-0 text-white hvr-color1">
-                      <AiOutlineUser className="fs-4 me-sm-2" />
+                    <AiOutlineUser className="fs-4 me-sm-2" />
+                    <p className="mb-0 text-white hvr-color1 d-none d-sm-block">
                       Log in
                     </p>
                   </Link>
@@ -111,12 +111,12 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <div className="menu-bottom d-flex align-items-center gap-sm-5">
-                <div className="row">
-                  <div className="col-12 col-sm-6">
+              <div className="menu-bottom d-flex align-items-center justify-content-center justify-content-sm-start">
+                <div className="row w-100">
+                  <div className="col-12 col-sm-5 col-md-4">
                     <div className="dropdown d-flex justify-content-center justify-content-sm-start">
                       <button
-                        className="d-flex align-items-center btn btn-secondary dropdown-toggle bg-transparent border-0"
+                        className="d-none d-sm-flex align-items-center btn btn-secondary dropdown-toggle bg-transparent border-0"
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
@@ -161,18 +161,27 @@ const Header = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-12 col-sm-6 mb-3 mb-sm-0 d-flex align-itmes-center justify-content-center justify-content-sm-start">
-                    <div className="d-flex align-items-center gap-4 gap-md-5">
-                      <NavLink to="/" className="hvr-color1">
+                  <div className="col-12 col-sm-6 mb-2 mt-1 mt-sm-0 mb-sm-0 d-flex align-itmes-center justify-content-center justify-content-sm-start">
+                    <div className="row d-flex align-items-center">
+                      <NavLink to="/" className="col-3 hvr-color1 navigations">
                         Home
                       </NavLink>
-                      <NavLink to="/store" className="hvr-color1">
+                      <NavLink
+                        to="/store"
+                        className="col-3 hvr-color1 navigations"
+                      >
                         Store
                       </NavLink>
-                      <NavLink to="/blog" className="hvr-color1">
+                      <NavLink
+                        to="/blog"
+                        className="col-3 hvr-color1 navigations"
+                      >
                         Blogs
                       </NavLink>
-                      <NavLink to="/contact" className="hvr-color1">
+                      <NavLink
+                        to="/contact"
+                        className="col-3 hvr-color1 navigations"
+                      >
                         Contact
                       </NavLink>
                     </div>
