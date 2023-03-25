@@ -1,8 +1,8 @@
+import iPad1 from "../Assets/Images/iPad1.png";
 import Image1 from "../Assets/Images/watchP.jpg";
 import Image2 from "../Assets/Images/watchP1.jpg";
 import Image3 from "../Assets/Images/watchP2.webp";
 import Image from "../Assets/Images/watchPMain.jpg";
-import iPad1 from "../Assets/Images/iPad1.png";
 
 export const services = [
   {

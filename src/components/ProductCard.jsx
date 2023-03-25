@@ -8,7 +8,7 @@ import { productData } from "../utils/Data";
 const ProductCard = ({ grid }) => {
   let location = useLocation();
   return (
-    <div className="row m-0">
+    <div className="row m-0 p-0 justify-content-center">
       {productData?.map(
         ({ image, title, description, brand, price }, index) => {
           return (

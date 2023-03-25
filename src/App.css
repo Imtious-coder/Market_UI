@@ -453,7 +453,6 @@ footer .input-group-text {
 
 /* OUR STORE */
 .filter-card {
-  padding: 15px 15px 25px;
   border-radius: 10px;
   background-color: white;
 }
@@ -470,6 +469,10 @@ footer .input-group-text {
   line-height: 30px;
   color: var(--color-777777);
   cursor: pointer;
+}
+.filter-card li {
+  font-size: 12px;
+  line-height: 18px;
 }
 .filter-card .form-check-input:focus {
   box-shadow: none;
@@ -514,6 +517,11 @@ footer .input-group-text {
   border-radius: 10px;
   background-color: white;
 }
+.sort,
+.sort option,
+.total-products {
+  font-size: 14px;
+}
 .grid img {
   height: 30px;
   width: 30px;
@@ -530,11 +538,11 @@ footer .input-group-text {
 }
 .gr-6 {
   width: 49.3%;
-  padding: 0px 10px 0px 12px;
+  padding: 0 5px;
 }
 .gr-4 {
   width: 32%;
-  padding: 0px 0px 0px 12px;
+  padding: 5px 2px;
 }
 .gr-3 {
   width: 24%;

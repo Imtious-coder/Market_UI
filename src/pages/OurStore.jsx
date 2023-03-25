@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
 import Color from "../components/Color";
 import Container from "../components/Container";
@@ -7,206 +6,141 @@ import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 
 const OurStore = () => {
-  const [grid, setGrid] = useState(4);
+  const [grid, setGrid] = useState(6);
   return (
     <>
       <Meta title={"Our Store"} />
       <BreadCrumb title="Our Store" />
-      <Container class1="store-wrapper home-wrapper-2 py-5">
-        <div className="row">
-          {/* LEFT SIDE OPTIONS */}
-          <div className="col-3">
-            <div className="filter-card mb-3">
-              <h3 className="filter-title">Shop By Categories</h3>
-              <div>
-                <ul className="ps-0">
-                  <li>Watch</li>
-                  <li>TV</li>
-                  <li>Camera</li>
-                  <li>Laptop</li>
-                </ul>
-              </div>
-            </div>
-            <div className="filter-card mb-3">
-              <h3 className="filter-title">Filter By</h3>
-              <div>
-                <h5 className="sub-title">Availablity</h5>
-                <div>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id=""
-                    />
-                    <label className="form-check-label" htmlFor="">
-                      In Stock (2)
-                    </label>
-                  </div>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id=""
-                    />
-                    <label className="form-check-label" htmlFor="">
-                      Out Of Stock (0)
-                    </label>
-                  </div>
-                </div>
-                <h5 className="sub-title">Price</h5>
-                <div className="d-flex align-items-center gap-10">
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="floatingInput"
-                      placeholder="From"
-                    />
-                    <label htmlFor="floatingInput">From</label>
-                  </div>
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="floatingInput1"
-                      placeholder="To"
-                    />
-                    <label htmlFor="floatingInput1">To</label>
-                  </div>
-                </div>
-                <h5 className="sub-title">Colors</h5>
-                <Color />
-                <h5 className="sub-title">Size</h5>
-                <div>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="color-1"
-                    />
-                    <label className="form-check-label" htmlFor="color-1">
-                      S (2)
-                    </label>
-                  </div>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="color-2"
-                    />
-                    <label className="form-check-label" htmlFor="color-2">
-                      M (0)
-                    </label>
+      <Container class1="store-wrapper home-wrapper-2 py-3 py-sm-5">
+        <div className="row m-0">
+          <div className="col-12 col-sm-4 col-md-3 p-0">
+            <div className="row">
+              <div className="col-12 px-2 mb-3 d-none d-sm-block">
+                <div className="filter-card p-2 p-sm-3">
+                  <h3 className="filter-title mb-0 mb-sm-2">
+                    Shop By Categories
+                  </h3>
+                  <div>
+                    <ul className="ps-0">
+                      <li className="mb-sm-2">Watch</li>
+                      <li className="mb-sm-2">TV</li>
+                      <li className="mb-sm-2">Camera</li>
+                      <li className="mb-sm-2">Laptop</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="filter-card mb-3">
-              <h3 className="filter-title">Product Tags</h3>
-              <div>
-                <div className="product-tags d-flex flex-wrap align-items-center gap-10">
-                  <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Headphone
-                  </span>
-                  <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Phone
-                  </span>
-                  <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Watch
-                  </span>
-                  <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Headset
-                  </span>
-                  <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Speakers
-                  </span>
-                  <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Smart Watch
-                  </span>
-                  <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    iPhone 13 Pro Max
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="filter-card mb-3">
-              <h3 className="filter-title">Random Product</h3>
-              <div>
-                <div className="random-products mb-3 d-flex">
-                  <div className="w-50">
-                    <img
-                      src="images/watch.jpg"
-                      className="img-fluid"
-                      alt="watch"
-                    />
-                  </div>
-                  <div className="w-50">
-                    <h5>Best Smart watch in the town</h5>
-                    <ReactStars
-                      count={5}
-                      size={20}
-                      value={5}
-                      edit={false}
-                      activeColor="#ffd700"
-                    />
-                    <strong>$ 299.02</strong>
-                  </div>
-                </div>
-                <div className="random-products d-flex">
-                  <div className="w-50">
-                    <img
-                      src="images/camera.jpg"
-                      className="img-fluid"
-                      alt="watch"
-                    />
-                  </div>
-                  <div className="w-50">
-                    <h5>Digital Camera</h5>
-                    <ReactStars
-                      count={5}
-                      size={20}
-                      value={5}
-                      edit={false}
-                      activeColor="#ffd700"
-                    />
-                    <strong>$ 799.09</strong>
+              <div className="col-12 px-2">
+                <div className="filter-card p-3">
+                  <h3 className="filter-title mb-3 mb-sm-4 text-center text-sm-start">
+                    Filter By
+                  </h3>
+                  <div>
+                    <h5 className="sub-title m-0 mb-1 mb-sm-2">Availablity</h5>
+                    <div className="d-flex flex-sm-column gap-3 gap-sm-0">
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id=""
+                        />
+                        <label className="form-check-label" htmlFor="">
+                          In Stock (2)
+                        </label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id=""
+                        />
+                        <label className="form-check-label" htmlFor="">
+                          Out Of Stock (0)
+                        </label>
+                      </div>
+                    </div>
+                    <h5 className="sub-title my-1 my-sm-3">Price</h5>
+                    <div className="d-flex align-items-center gap-10">
+                      <input
+                        type="number"
+                        className="form-control ps-2 py-1"
+                        id="floatingInput"
+                        placeholder="Min"
+                      />
+                      <input
+                        type="number"
+                        className="form-control ps-2 py-1"
+                        id="floatingInput1"
+                        placeholder="Max"
+                      />
+                    </div>
+                    <h5 className="sub-title mb-1 mb-sm-2">Colors</h5>
+                    <Color />
+                    <h5 className="sub-title mb-1 mb-sm-2">Size</h5>
+                    <div className="d-flex flex-sm-column gap-3 gap-sm-0">
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="color-1"
+                        />
+                        <label className="form-check-label" htmlFor="color-1">
+                          S (2)
+                        </label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="color-2"
+                        />
+                        <label className="form-check-label" htmlFor="color-2">
+                          M (0)
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           {/* RIGHT SIDE PRODUCTS */}
-          <div className="col-9">
-            <div className="filter-sort-grid">
-              <div className="d-flex justify-content-between align-items-center">
-                <div className="d-flex align-items-center gap-10">
-                  <p className="mb-0 d-inline-block" style={{ width: "100px" }}>
-                    Sort By:
-                  </p>
-                  <select defaultValue={"Featured"} name="" className="form-control form-select" id="">
-                    <option>Best Selling</option>
-                    <option>Featured</option>
-                    <option>Alphabetically, A-Z</option>
-                    <option>Alphabetically, Z-A</option>
-                    <option>Price, low to high</option>
-                    <option>Price, high to low </option>
-                    <option>Date, new to old</option>
-                    <option>Date, old to new</option>
-                  </select>
-                </div>
-                <div className="d-flex align-items-center gap-10">
+          <div className="col-12 col-sm-8 col-md-9 mt-2 mx-0 px-0 px-sm-2">
+            <div className="row mx-0 pt-2 pb-3 pb-sm-2 px-2 mx-sm-2 bg-white rounded">
+              <div className="col-12 col-md-6 py-2 d-flex align-items-center gap-1 gap-sm-3">
+                <p className="mb-0 d-inline-block" style={{ width: "100px" }}>
+                  Sort By:
+                </p>
+                <select
+                  defaultValue={"Featured"}
+                  name=""
+                  className="form-control form-select py-1 sort"
+                  id=""
+                >
+                  <option>Best Selling</option>
+                  <option>Featured</option>
+                  <option>Alphabetically, A-Z</option>
+                  <option>Alphabetically, Z-A</option>
+                  <option>Price, low to high</option>
+                  <option>Price, high to low </option>
+                  <option>Date, new to old</option>
+                  <option>Date, old to new</option>
+                </select>
+              </div>
+              <div className="col-12 col-md-6 mt-2">
+                <div className="d-flex align-items-center gap-2">
                   <p className="total-products mb-0">21 Products</p>
                   <div className="d-flex grid align-items-center gap-10">
                     <img
                       onClick={() => {
                         setGrid(3);
                       }}
-                      src="images/gr4.svg"
-                      className="d-block img-fluid"
+                      src="images/gr3.svg"
+                      className="d-none d-md-block img-fluid"
                       alt="grid"
                     />
                     <img
@@ -214,7 +148,7 @@ const OurStore = () => {
                         setGrid(4);
                       }}
                       src="images/gr3.svg"
-                      className="d-block img-fluid"
+                      className="d-none d-md-block img-fluid"
                       alt="grid"
                     />
                     <img
@@ -238,13 +172,7 @@ const OurStore = () => {
               </div>
             </div>
             <div className="products-list pb-5 mt-3 d-flex justify-content-center">
-              <div className="row gap-10">
-                <ProductCard grid={grid} />
-                <ProductCard grid={grid} />
-                <ProductCard grid={grid} />
-                <ProductCard grid={grid} />
-                <ProductCard grid={grid} />
-              </div>
+              <ProductCard grid={grid} />
             </div>
           </div>
         </div>
