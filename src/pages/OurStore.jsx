@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaArrowAltCircleDown } from "react-icons/fa";
 import BreadCrumb from "../components/BreadCrumb";
 import Color from "../components/Color";
 import Container from "../components/Container";
@@ -6,6 +7,7 @@ import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 
 const OurStore = () => {
+  const [filter, setFilter] = useState("d-none");
   const [grid, setGrid] = useState(6);
   return (
     <>
@@ -32,11 +34,25 @@ const OurStore = () => {
               </div>
               <div className="col-12 px-2">
                 <div className="filter-card p-3">
-                  <h3 className="filter-title mb-3 mb-sm-4 text-center text-sm-start">
-                    Filter By
-                  </h3>
-                  <div>
-                    <h5 className="sub-title m-0 mb-1 mb-sm-2">Availablity</h5>
+                  <div className="d-flex align-items-center justify-content-between">
+                    <h3 className="filter-title mb-0 text-center text-sm-start">
+                      Filter By
+                    </h3>
+                    <FaArrowAltCircleDown
+                      className="text-secondary filter-arrow hvr-color1"
+                      onClick={() =>
+                        filter === "d-none"
+                          ? setFilter("d-block")
+                          : filter === "d-block"
+                          ? setFilter("d-none")
+                          : ""
+                      }
+                    />
+                  </div>
+                  <div className={`${filter}`}>
+                    <h5 className="sub-title m-0 mb-1 mb-sm-2 mt-3">
+                      Availablity
+                    </h5>
                     <div className="d-flex flex-sm-column gap-3 gap-sm-0">
                       <div className="form-check">
                         <input
@@ -109,8 +125,8 @@ const OurStore = () => {
             </div>
           </div>
           {/* RIGHT SIDE PRODUCTS */}
-          <div className="col-12 col-sm-8 col-md-9 mt-2 mx-0 px-0 px-sm-2">
-            <div className="row mx-0 pt-2 pb-3 pb-sm-2 px-2 mx-sm-2 bg-white rounded">
+          <div className="col-12 col-sm-8 col-md-9 mt-2 mt-sm-0 mx-0 px-0 px-sm-2">
+            <div className="row mx-0 pt-2 pb-3 pb-sm-2 px-2 mx-sm-2 bg-white rounded-3">
               <div className="col-12 col-md-6 py-2 d-flex align-items-center gap-1 gap-sm-3">
                 <p className="mb-0 d-inline-block" style={{ width: "100px" }}>
                   Sort By:

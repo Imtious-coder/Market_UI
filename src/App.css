@@ -511,7 +511,9 @@ footer .input-group-text {
 .random-products:first-child {
   border-bottom: 1px solid var(--color-ededed);
 }
-
+.filter-arrow {
+  cursor: pointer;
+}
 .filter-sort-grid {
   padding: 10px;
   border-radius: 10px;
