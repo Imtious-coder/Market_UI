@@ -10,17 +10,13 @@ const Login = () => {
     <>
       <Meta title={"Login"} />
       <BreadCrumb title="Login" />
-      <Container class1="login-wrapper home-wrapper-2 py-5">
-        <div className="row">
-          <div className="col-12">
+      <Container class1="login-wrapper home-wrapper-2 py-0 py-sm-5">
+        <div className="row justify-content-center">
+          <div className="col-12 col-sm-7 col-md-6 col-lg-4">
             <div className="auth-card">
               <h3 className="text-center">Login</h3>
               <form action="" className="d-flex flex-column gap-15 mt-4">
-                <CustomInput
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                />
+                <CustomInput type="email" name="email" placeholder="Email" />
                 <CustomInput
                   type="password"
                   name="password"
