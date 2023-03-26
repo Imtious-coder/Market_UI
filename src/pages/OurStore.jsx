@@ -15,6 +15,7 @@ const OurStore = () => {
       <BreadCrumb title="Our Store" />
       <Container class1="store-wrapper home-wrapper-2 py-3 py-sm-5">
         <div className="row m-0">
+          {/* LEFT SIDE FILTERS */}
           <div className="col-12 col-sm-4 col-md-3 p-0">
             <div className="row">
               <div className="col-12 px-2 mb-3 d-none d-sm-block">
