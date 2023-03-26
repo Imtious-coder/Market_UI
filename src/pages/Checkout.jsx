@@ -10,7 +10,7 @@ const Checkout = () => {
     <>
       <Meta title={"Checkout"} />
       <BreadCrumb title="Checkout" />
-      <Container class1="checkout-wrapper home-wrapper-2 py-5">
+      <Container class1="checkout-wrapper home-wrapper-2 py-3 py-sm-5">
         <div className="row">
           <div className="col-md-7">
             <div className="checkout-left-data">
@@ -102,7 +102,7 @@ const Checkout = () => {
               </form>
             </div>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-5 mt-5">
             <div className="border-bottom py-4">
               <div className="d-flex gap-10 align-items-center justify-content-between">
                 <div className="w-75 d-flex align-items-center gap-4">
