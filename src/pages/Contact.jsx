@@ -10,7 +10,7 @@ const Contact = () => {
     <>
       <Meta title={"Contact Us"} />
       <BreadCrumb title="Contact Us" />
-      <Container class1="contact-wrapper home-wrapper-2 py-5">
+      <Container class1="contact-wrapper home-wrapper-2 py-3 py-sm-5">
         <div className="row">
           <div className="col-12">
             <iframe
@@ -24,78 +24,90 @@ const Contact = () => {
               title="map"
             ></iframe>
           </div>
-          <div className="col-12 mt-5">
-            <div className="contact-inner-wrapper d-flex justify-content-between">
-              <div>
-                <h3 className="contact-title">Contact</h3>
-                <form action="" className="d-flex flex-column gap-15">
+          <div className="col-12 mt-4">
+            <div className="contact-inner-wrapper">
+              <div className="row">
+                <div className="col-12 col-sm-6">
                   <div>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Name"
-                    />
+                    <h3 className="contact-title text-center text-sm-start">
+                      Contact
+                    </h3>
+                    <form action="" className="d-flex flex-column gap-15">
+                      <div>
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Name"
+                        />
+                      </div>
+                      <div>
+                        <input
+                          type="email"
+                          className="form-control"
+                          placeholder="E-mail"
+                        />
+                      </div>
+                      <div>
+                        <input
+                          type="tel"
+                          className="form-control"
+                          placeholder="Mobile Number"
+                        />
+                      </div>
+                      <div>
+                        <textarea
+                          className="w-100 form-control"
+                          placeholder="Comments"
+                          name=""
+                          id=""
+                          cols="30"
+                          rows="5"
+                        ></textarea>
+                      </div>
+                      <div>
+                        <button type="submit" className="button border-0">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
                   </div>
+                </div>
+                <div className="col-12 col-sm-6 mt-5 mt-sm-0">
                   <div>
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="E-mail"
-                    />
+                    <h3 className="contact-title mb-3 text-center text-sm-start">
+                      Get In Touch With Us
+                    </h3>
+                    <div>
+                      <ul className="ps-0">
+                        <li className="d-flex align-items-center mb-3">
+                          <AiOutlineHome className="fs-6" /> &nbsp;
+                          <address className="fs-6 mb-0">
+                            Shimpur, Engineer Bari, 3500. Chattogram,
+                            Bangladesh.
+                          </address>
+                        </li>
+                        <li className="d-flex align-items-center mb-3">
+                          <BiPhoneCall /> &nbsp;
+                          <a href="tel:+8801935501610" className="fs-6">
+                            +8801635501610
+                          </a>
+                        </li>
+                        <li className="d-flex align-items-center mb-3">
+                          <AiOutlineMail /> &nbsp;
+                          <a
+                            href="mailto:iarafat386@gmail.com"
+                            className="fs-6"
+                          >
+                            iarafat386@gmail.com
+                          </a>
+                        </li>
+                        <li className="d-flex align-items-center mb-3">
+                          <BiInfoCircle /> &nbsp;
+                          <p className="mb-0">Monday - Friday 10 AM - 8 PM</p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div>
-                    <input
-                      type="tel"
-                      className="form-control"
-                      placeholder="Mobile Number"
-                    />
-                  </div>
-                  <div>
-                    <textarea
-                      className="w-100 form-control"
-                      placeholder="Comments"
-                      name=""
-                      id=""
-                      cols="30"
-                      rows="5"
-                    ></textarea>
-                  </div>
-                  <div>
-                    <button type="submit" className="button border-0">
-                      Submit
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div>
-                <h3 className="contact-title mb-3">Get In Touch With Us</h3>
-                <div>
-                  <ul className="ps-0">
-                    <li className="d-flex align-items-center mb-3">
-                      <AiOutlineHome /> &nbsp;
-                      <address class="fs-6 mb-0">
-                        Shimpur, Engineer Bari, 3500. Chattogram, Bangladesh.
-                      </address>
-                    </li>
-                    <li className="d-flex align-items-center mb-3">
-                      <BiPhoneCall /> &nbsp;
-                      <a href="tel:+8801935501610" class="fs-6">
-                        {" "}
-                        +8801635501610
-                      </a>
-                    </li>
-                    <li className="d-flex align-items-center mb-3">
-                      <AiOutlineMail /> &nbsp;
-                      <a href="mailto:iarafat386@gmail.com" class="fs-6">
-                        {" "}
-                        iarafat386@gmail.com
-                      </a>
-                    </li>
-                    <li className="d-flex align-items-center mb-3">
-                      <BiInfoCircle /> &nbsp;
-                      <p className="mb-0">Monday - Friday 10 AM - 8 PM</p>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
