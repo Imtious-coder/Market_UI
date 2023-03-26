@@ -12,100 +12,64 @@ const Cart = () => {
       <BreadCrumb title="Cart" />
       <Container class1="cart-wrapper home-wrapper-2 py-5">
         <div className="row">
-          <div className="col-12">
-            <div className="cart-header py-3 d-flex justify-content-between align-items-center">
-              <h4 className="cart-col-1">Product</h4>
-              <h4 className="cart-col-2">Price</h4>
-              <h4 className="cart-col-3">Quantity</h4>
-              <h4 className="cart-col-4">Total</h4>
-            </div>
-            <div className="cart-data py-3 d-flex justify-content-between align-items-center">
-              <div className="cart-col-1 d-flex align-items-center gap-30">
-                <div className="w-25">
+          <div className="col-12 bg-white pt-3">
+            <div className="row">
+              <div className="col-6 col-sm-3">
+                <h4 className="fw-bold text-center">Product</h4>
+                <div className="d-flex justify-content-center">
                   <img
                     src="/images/watch.jpg"
-                    className="img-fluid"
+                    className="img-fluid w-50"
                     alt="product-img"
                   />
                 </div>
-                <div className="w-75">
-                  <h5 className="title">Smart Watch 3 Pro</h5>
-                  <p className="color">Color: Red</p>
-                  <p className="size">Size: M</p>
+                <div className="d-flex flex-column justify-content-center">
+                  <h5 className="title text-center fs-6">Smart Watch 3 Pro</h5>
+                  <p className="color text-center">Color: Red</p>
+                  <p className="size text-center">Size: M</p>
                 </div>
               </div>
-              <div className="cart-col-2">
-                <h5 className="price">$ 199.99</h5>
-              </div>
-              <div className="cart-col-3 d-flex align-items-center gap-15">
-                <div>
-                  <input
-                    type="number"
-                    name=""
-                    placeholder="0"
-                    min={1}
-                    max={20}
-                    className="form-control"
-                    style={{ width: "70px", height: "30px" }}
-                  />
+              <div className="col-6 col-sm-9">
+                <div className="row">
+                  <div className="col-12 col-sm-4">
+                    <h4 className="fw-bold text-center">Price</h4>
+                    <h5 className="price fs-6 text-center">399 BDT</h5>
+                  </div>
+                  <div className="col-12 col-sm-4 mt-4 mt-sm-0">
+                    <div>
+                      <h4 className="text-center fw-bold">Quantity</h4>
+                      <input
+                        type="number"
+                        name=""
+                        placeholder="0"
+                        min={1}
+                        max={20}
+                        className="form-control mx-auto"
+                        style={{ width: "70px", height: "30px" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-12 col-sm-4 mt-4 mt-sm-0">
+                    <h4 className="text-center fw-bold">Total</h4>
+                    <div className="d-flex flex-column justify-content-center flex-sm-row gap-2 gap-sm-4">
+                      <h5 className="price fs-6 text-center">399 BDT</h5>
+                      <AiFillDelete className="text-danger text-center mx-auto mx-sm-0" />
+                    </div>
+                  </div>
                 </div>
-                <div className="px-2 py-1 bg-white rounded-circle">
-                  <AiFillDelete className="text-danger " />
-                </div>
-              </div>
-              <div className="cart-col-4">
-                <h5 className="price">$ 199.99</h5>
-              </div>
-            </div>
-            <div className="cart-data py-3 d-flex justify-content-between align-items-center">
-              <div className="cart-col-1 d-flex align-items-center gap-30">
-                <div className="w-25">
-                  <img
-                    src="/images/watch.jpg"
-                    className="img-fluid"
-                    alt="product-img"
-                  />
-                </div>
-                <div className="w-75">
-                  <h5 className="title">Smart Watch 3 Pro</h5>
-                  <p className="color">Color: Red</p>
-                  <p className="size">Size: M</p>
-                </div>
-              </div>
-              <div className="cart-col-2">
-                <h5 className="price">$ 199.99</h5>
-              </div>
-              <div className="cart-col-3 d-flex align-items-center gap-15">
-                <div>
-                  <input
-                    type="number"
-                    name=""
-                    placeholder="0"
-                    min={1}
-                    max={20}
-                    className="form-control"
-                    style={{ width: "70px", height: "30px" }}
-                  />
-                </div>
-                <div className="px-2 py-1 bg-white rounded-circle">
-                  <AiFillDelete className="text-danger " />
-                </div>
-              </div>
-              <div className="cart-col-4">
-                <h5 className="price">$ 199.99</h5>
               </div>
             </div>
           </div>
           <div className="col-12 py-4">
-            <div className="d-flex justify-content-between align-items-center">
+            <div className="d-flex flex-column flex-sm-row justify-content-between align-items-center">
               <div>
-                <Link to="/" className="button">
+                <Link to="/store" className="button text-center">
                   Continue Shopping
                 </Link>
               </div>
-              <div className="d-flex flex-column align-items-end">
-                <h4 className="subtotal">SubTotal: $ 301.20</h4>
-                <p className="tax">
+              <div className="d-flex flex-column align-items-center align-items-sm-end mt-4 mt-sm-0">
+                <h4 className="subtotal text-center">SubTotal: 399 BDT</h4>
+                <p className="tax text-center">
                   Taxes and shipping calculated at checkout*
                 </p>
                 <Link to="/checkout" className="button">
