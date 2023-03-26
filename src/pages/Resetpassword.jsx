@@ -10,12 +10,12 @@ const Resetpassword = () => {
     <>
       <Meta title={"Reset Password"} />
       <BreadCrumb title="Reset Password" />
-      <Container class1="login-wrapper home-wrapper-2 py-5">
-        <div className="row">
-          <div className="col-12">
+      <Container class1="login-wrapper home-wrapper-2 py-0 py-sm-5">
+        <div className="row justify-content-center">
+          <div className="col-12 col-sm-7 col-md-6 col-lg-4">
             <div className="auth-card">
               <h3 className="text-center mb-4">Reset Password</h3>
-              <form action="" className="d-flex flex-column gap-15 mt-3">
+              <form action="/" className="d-flex flex-column gap-15 mt-3">
                 <CustomInput
                   type="password"
                   name="password"
