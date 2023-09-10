@@ -52,16 +52,25 @@ const Footer = () => {
                   im***s@gmail.com
                 </a>
                 <div className="social_icons d-flex align-items-center gap-3 gap-sm-4 mt-4">
-                  <Link to="https://www.facebook.com/imtious.midul/" target={"_blank"}>
+                  <Link
+                    to="https://www.facebook.com/imtious.midul/"
+                    target={"_blank"}
+                  >
                     <BsFacebook className="fs-4" />
                   </Link>
-                  <Link to="https://www.linkedin.com/in/imtious/" target={"_blank"}>
+                  <Link
+                    to="https://www.linkedin.com/in/imtious/"
+                    target={"_blank"}
+                  >
                     <BsLinkedin className="fs-4" />
                   </Link>
                   <Link to="https://github.com/Imtious-coder" target={"_blank"}>
                     <BsGithub className="fs-4" />
                   </Link>
-                  <Link to="https://medium.com/@imtious.islam.me" target={"_blank"}>
+                  <Link
+                    to="https://medium.com/@imtious.islam.me"
+                    target={"_blank"}
+                  >
                     <BsMedium className="fs-4" />
                   </Link>
                 </div>
@@ -90,7 +99,7 @@ const Footer = () => {
             <div className="col-6 col-md-3 mt-5 mt-md-0">
               <h4 className="mb-4">Account</h4>
               <div className="footer-links d-flex flex-column">
-                <Link className="py-2 mb-1" to="/login">
+                <Link className="py-2 mb-1" to="/signup">
                   Create Account
                 </Link>
                 <Link className="py-2 mb-1" to="/about">

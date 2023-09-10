@@ -82,14 +82,13 @@ const Contact = () => {
                         <li className="d-flex align-items-center mb-3">
                           <AiOutlineHome className="fs-6" /> &nbsp;
                           <address className="fs-6 mb-0">
-                            Shimpur, Engineer Bari, 3500. Chattogram,
-                            Bangladesh.
+                            S***pur, E****eer Bari, 3**0, Chattogram, Bangladesh
                           </address>
                         </li>
                         <li className="d-flex align-items-center mb-3">
                           <BiPhoneCall /> &nbsp;
                           <a href="tel:+8801935501610" className="fs-6">
-                            +8801635501610
+                            +880163*****10
                           </a>
                         </li>
                         <li className="d-flex align-items-center mb-3">
@@ -98,7 +97,7 @@ const Contact = () => {
                             href="mailto:iarafat386@gmail.com"
                             className="fs-6"
                           >
-                            iarafat386@gmail.com
+                            ia****t386@gmail.com
                           </a>
                         </li>
                         <li className="d-flex align-items-center mb-3">
