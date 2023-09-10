@@ -120,7 +120,12 @@ a:hover {
 /* HEADER PART  */
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);
-  background-color: var(--color-131921);
+  background: linear-gradient(
+    109.6deg,
+    rgb(187, 0, 212) 11.2%,
+    rgb(32, 38, 238) 91.1%
+  );
+  /* background-color: var(--color-131921); */
 }
 .header-upper {
   background-color: var(--color-131921);
