@@ -11,6 +11,8 @@ import SpecialProduct from "../components/SpecialProduct";
 import { services } from "../utils/Data";
 
 const Home = () => {
+  const isLoggedIn = localStorage.getItem("auth-token");
+  console.log(isLoggedIn, "FOUND ONE");
   return (
     <>
       <Container class1="home-wrapper-1 py-1 py-sm-3">
