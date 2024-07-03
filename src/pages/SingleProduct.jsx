@@ -1,23 +1,26 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { TbGitCompare } from "react-icons/tb";
 import { GlassMagnifier } from "react-image-magnifiers";
 import ReactStars from "react-rating-stars-component";
-import { Link } from "react-router-dom";
-import Image2 from "../Assets/Images/watchP.jpg";
-import Image1 from "../Assets/Images/watchP1.jpg";
-import Image3 from "../Assets/Images/watchP2.webp";
-import Image4 from "../Assets/Images/watchP4.jpg";
-import Image from "../Assets/Images/watchPMain.jpg";
+import { Link, useParams } from "react-router-dom";
 import BreadCrumb from "../components/BreadCrumb";
 import Color from "../components/Color";
 import Container from "../components/Container";
 import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
+import { ShopContext } from "../strore/useStore";
 
 const SingleProduct = () => {
-  const [image, setImage] = useState(Image);
+  const [image, setImage] = useState("");
+  const [productDetails, setProductDetails] = useState({});
+  const { allProducts } = useContext(ShopContext);
+  const { productId } = useParams();
   const orderedProduct = false;
+
+  const { addToCart } = useContext(ShopContext);
+
+  // PRODUCT LINK COPY
   const copyToClipboard = (text) => {
     console.log("text", text);
     var textField = document.createElement("textarea");
@@ -27,6 +30,20 @@ const SingleProduct = () => {
     document.execCommand("copy");
     textField.remove();
   };
+
+  useEffect(() => {
+    if (allProducts) {
+      const product = allProducts.find(
+        (e) => Number(e.id) === Number(productId)
+      );
+      if (product) {
+        setProductDetails(product);
+        setImage(product.image ? product.image[0] : null);
+        console.log("Product Details", product);
+      }
+    }
+  }, [productId, allProducts]);
+
   return (
     <>
       <Meta title={"Product Name"} />
@@ -36,68 +53,76 @@ const SingleProduct = () => {
           <div className="col-12 col-md-6 col-lg-6">
             <div className="row">
               <div className="col-12">
-                <div className="px-sm-5 px-md-0">
-                  <GlassMagnifier
-                    imageSrc={image}
-                    largeImageSrc={image}
-                    square={true}
-                    magnifierSize="40%"
-                    alt="product_Image"
-                    className="w-100 h-100 img-fluid"
-                  />
-                </div>
+                {productDetails.image && (
+                  <div className="px-sm-5 px-md-0">
+                    <GlassMagnifier
+                      imageSrc={image}
+                      largeImageSrc={image}
+                      square={true}
+                      magnifierSize="40%"
+                      alt="product_Image"
+                      className="w-100 img-fluid main-image"
+                    />
+                  </div>
+                )}
               </div>
-              <div className="col-3 d-flex justify-content-center pt-3 pt-sm-5">
-                <div>
-                  <img
-                    onClick={() => setImage(Image1)}
-                    src={Image1}
-                    alt="product_Image"
-                    className="other-images border"
-                  />
-                </div>
+              <div className="col-3 d-flex justify-content-center pt-3">
+                {productDetails.image && productDetails.image[0] && (
+                  <div>
+                    <img
+                      onClick={() => setImage(productDetails.image[0])}
+                      src={productDetails.image[0]}
+                      alt="product_Image"
+                      className="other-images border"
+                    />
+                  </div>
+                )}
               </div>
-              <div className="col-3 d-flex justify-content-center pt-3 pt-sm-5">
-                <div>
-                  <img
-                    onClick={() => setImage(Image2)}
-                    src={Image2}
-                    alt="product_Image"
-                    className="other-images border"
-                  />
-                </div>
+              <div className="col-3 d-flex justify-content-center pt-3">
+                {productDetails.image && productDetails.image[1] && (
+                  <div>
+                    <img
+                      onClick={() => setImage(productDetails.image[1])}
+                      src={productDetails.image[1]}
+                      alt="product_Image"
+                      className="other-images border"
+                    />
+                  </div>
+                )}
               </div>
-              <div className="col-3 d-flex justify-content-center pt-3 pt-sm-5">
-                <div>
-                  <img
-                    onClick={() => setImage(Image3)}
-                    src={Image3}
-                    alt="product_Image"
-                    className="other-images border"
-                  />
-                </div>
+              <div className="col-3 d-flex justify-content-center pt-3">
+                {productDetails.image && productDetails.image[2] && (
+                  <div>
+                    <img
+                      onClick={() => setImage(productDetails.image[2])}
+                      src={productDetails.image[2]}
+                      alt="product_Image"
+                      className="other-images border"
+                    />
+                  </div>
+                )}
               </div>
-              <div className="col-3 d-flex justify-content-center pt-3 pt-sm-5">
-                <div>
-                  <img
-                    onClick={() => setImage(Image4)}
-                    src={Image4}
-                    alt="product_Image"
-                    className="other-images border"
-                  />
-                </div>
+              <div className="col-3 d-flex justify-content-center pt-3">
+                {productDetails.image && productDetails.image[3] && (
+                  <div>
+                    <img
+                      onClick={() => setImage(productDetails.image[3])}
+                      src={productDetails.image[3]}
+                      alt="product_Image"
+                      className="other-images border"
+                    />
+                  </div>
+                )}
               </div>
             </div>
           </div>
           <div className="col-12 col-md-6 mt-4 mt-sm-5 mt-md-0">
             <div className="main-product-details">
               <div className="border-bottom">
-                <h3 className="title">
-                  Silver Stainless Steel Case with Sport Band
-                </h3>
+                <h3 className="title">{productDetails.name}</h3>
               </div>
               <div className="border-bottom pb-3 pt-1">
-                <p className="price mb-0">2909 BDT</p>
+                <p className="price mb-0">{productDetails.new_price} BDT</p>
                 <div className="d-flex gap-10 align-items-center">
                   <ReactStars
                     count={5}
@@ -113,39 +138,35 @@ const SingleProduct = () => {
               <div className="border-bottom py-3">
                 <div className="d-flex align-items-center gap-10 my-2">
                   <h3 className="product-heading">Type :</h3>
-                  <p className="product-data">Watch</p>
+                  <p className="product-data">{productDetails.type}</p>
                 </div>
                 <div className="d-flex align-items-center gap-10 my-2">
                   <h3 className="product-heading">Brand :</h3>
-                  <p className="product-data">Havels</p>
+                  <p className="product-data">{productDetails.brand}</p>
                 </div>
                 <div className="d-flex align-items-center gap-10 my-2">
                   <h3 className="product-heading">Category :</h3>
-                  <p className="product-data"> Watch</p>
+                  <p className="product-data">{productDetails.category}</p>
                 </div>
                 <div className="d-flex align-items-center gap-10 my-2">
                   <h3 className="product-heading">Tags :</h3>
-                  <p className="product-data">Watch - Mobile - Smart watch</p>
+                  <p className="product-data">{productDetails.tags}</p>
                 </div>
                 <div className="d-flex align-items-center gap-10 my-2">
                   <h3 className="product-heading">Availablity :</h3>
-                  <p className="product-data">In Stock</p>
+                  <p className="product-data">{productDetails.availability}</p>
                 </div>
                 <div className="d-flex align-items-center gap-10 my-3">
                   <h3 className="product-heading">Size :</h3>
                   <div className="d-flex flex-wrap gap-15">
-                    <span className="badge text-dark border border-secondary">
-                      S
-                    </span>
-                    <span className="badge text-dark border border-secondary">
-                      M
-                    </span>
-                    <span className="badge text-dark border border-secondary">
-                      XL
-                    </span>
-                    <span className="badge text-dark border border-secondary">
-                      XXL
-                    </span>
+                    {productDetails.size &&
+                      productDetails.size.map((size) => {
+                        return (
+                          <span className="badge text-dark border border-secondary">
+                            {size}
+                          </span>
+                        );
+                      })}
                   </div>
                 </div>
                 <div className="d-flex flex-column gap-10 my-2">
@@ -169,7 +190,14 @@ const SingleProduct = () => {
                   </div>
                   <div className="col-12 my-3">
                     <div className="d-flex align-items-center gap-10">
-                      <button className="button">ADD TO CART</button>
+                      <button
+                        onClick={() => {
+                          addToCart(productDetails.id);
+                        }}
+                        className="button"
+                      >
+                        ADD TO CART
+                      </button>
                       <button className="button2">Buy It Now</button>
                     </div>
                   </div>
@@ -217,14 +245,7 @@ const SingleProduct = () => {
         <div className="row">
           <div className="col-12">
             <h4>Description</h4>
-            <p className="bg-white p-3">
-              The stainless steel case is durable and polished to a shiny,
-              mirror-like finish. The Sport Band is made from a durable yet
-              surprisingly soft high-performance fluoroelastomer with an
-              innovative pin-and-tuck closure. See even more band types. Try
-              different case materials. Express your personal style in the Apple
-              Watch Studio. Only at Apple.
-            </p>
+            <p className="bg-white p-3">{productDetails.description}</p>
           </div>
         </div>
       </Container>

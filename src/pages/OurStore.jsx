@@ -156,7 +156,7 @@ const OurStore = () => {
                       onClick={() => {
                         setGrid(3);
                       }}
-                      src="images/gr3.svg"
+                      src="images/gr4.svg"
                       className="d-none d-md-block img-fluid"
                       alt="grid"
                     />

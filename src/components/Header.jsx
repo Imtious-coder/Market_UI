@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { AiFillHeart, AiOutlineUser } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { FaShoppingCart } from "react-icons/fa";
 import { TiArrowRepeat } from "react-icons/ti";
 import { Link, NavLink } from "react-router-dom";
+import { ShopContext } from "../strore/useStore";
 
 const Header = () => {
+  const { getTotalCartItems } = useContext(ShopContext);
+  const isLoggedIn = localStorage.getItem("auth-token");
+  const handleLogout = () => {
+    localStorage.removeItem("auth-token");
+    window.location.replace("/");
+  };
   return (
     <>
       <header className="header-top-strip py-2 d-none d-md-block">
@@ -71,7 +78,7 @@ const Header = () => {
                 <div>
                   <Link
                     to="/wishlist"
-                    className="d-flex align-items-center gap-10"
+                    className="d-flex align-items-center"
                     title="List of your favourite products"
                   >
                     <AiFillHeart className="fs-4 me-sm-2" />
@@ -83,13 +90,22 @@ const Header = () => {
                 <div>
                   <Link
                     to="/login"
-                    className="d-flex align-items-center gap-10"
+                    className="d-flex align-items-center"
                     title="Login / Sign up"
                   >
                     <AiOutlineUser className="fs-4 me-sm-2" />
-                    <p className="mb-0 text-white hvr-color1 d-none d-sm-block">
-                      Log in
-                    </p>
+                    {isLoggedIn ? (
+                      <p
+                        className="mb-0 text-white hvr-color1 d-none d-sm-block"
+                        onClick={handleLogout}
+                      >
+                        Logout
+                      </p>
+                    ) : (
+                      <p className="mb-0 text-white hvr-color1 d-none d-sm-block">
+                        Log in
+                      </p>
+                    )}
                   </Link>
                 </div>
                 <div>
@@ -99,7 +115,7 @@ const Header = () => {
                     title="Cart"
                   >
                     <FaShoppingCart className="fs-3 me-sm-2 hvr-color1" />
-                    <p>10</p>
+                    <p>{getTotalCartItems()}</p>
                   </Link>
                 </div>
               </div>
