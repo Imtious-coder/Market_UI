@@ -21,7 +21,7 @@ const Signup = () => {
   const signup = async () => {
     console.log("Sign up", formData);
     let responseData;
-    await fetch("http://localhost:4000/signup", {
+    await fetch("https://marketbackend-production.up.railway.app/signup", {
       method: "POST",
       headers: {
         Accept: "application/form-data",
