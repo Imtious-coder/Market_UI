@@ -16,7 +16,7 @@ const ShopContextProvider = (props) => {
 
   // ALL PRODUCTS API
   useEffect(() => {
-    fetch("https://marketbackend-production.up.railway.app/allproducts")
+    fetch("https://market-backend-r9ew.onrender.com/allproducts")
       .then((res) => res.json())
       .then((data) => setAllProducts(data));
   }, []);
