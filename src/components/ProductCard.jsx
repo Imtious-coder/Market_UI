@@ -4,6 +4,7 @@ import { TiArrowRepeat } from "react-icons/ti";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
 import { ShopContext } from "../strore/useStore";
+import "../styles/productCard.css";
 
 const ProductCard = ({ grid }) => {
   // const [allProducts, setAllProducts] = useState([]);
@@ -21,25 +22,7 @@ const ProductCard = ({ grid }) => {
   return (
     <div className="row m-0 p-0 justify-content-center">
       {allProducts?.map(
-        (
-          {
-            id,
-            name,
-            description,
-            image,
-            category,
-            type,
-            brand,
-            tags,
-            size,
-            total_items,
-            availability,
-            colors,
-            new_price,
-            old_price,
-          },
-          index
-        ) => {
+        ({ id, name, description, image, brand, new_price }, index) => {
           return (
             <div
               key={index}
@@ -52,7 +35,11 @@ const ProductCard = ({ grid }) => {
               <div className="product-card position-relative">
                 <Link
                   to={`/product/${id}`}
-                  onClick={window.scrollTo(0, 0)}
+                  onClick={
+                    location.pathname.includes("product")
+                      ? window.scrollTo(0, 0)
+                      : ""
+                  }
                   className="product-card-link"
                 >
                   <div className="overflow-hidden">
