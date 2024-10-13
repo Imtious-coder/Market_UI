@@ -10,10 +10,12 @@
   --color-3b4149: #3b4149;
   --color-febd69: #febd69;
   --color-232f3e: #232f3e;
+  --color-ff2b23: #ff2b23;
   --color-bf4800: #bf4800;
   --color-f5f5f7: #f5f5f7;
   --color-ededed: #ededed;
   --color-777777: #777777;
+  --color-dee2e6: #dee2e6;
   --color-1c1b1b: #1c1b1b;
   --color-hover: #deffc6;
   --color-disable: #a3a3a3;
@@ -113,77 +115,25 @@ a:hover {
   background-color: var(--color-232f3e);
 }
 
+.hvr-color1 {
+  color: var(--color-1c1b1b) !important;
+}
 .hvr-color1:hover {
-  color: var(--color-febd69) !important;
+  color: var(--color-ff2b23) !important;
+}
+.color1 {
+  color: var(--color-3b4149) !important;
+}
+.white {
+  color: var(--color-f5f5f7) !important;
 }
 
-/* HEADER PART  */
-.header-top-strip {
-  border-bottom: 1px solid var(--color-3b4149);
-  background: linear-gradient(
-    109.6deg,
-    rgb(187, 0, 212) 11.2%,
-    rgb(32, 38, 238) 91.1%
-  );
-  /* background-color: var(--color-131921); */
+.opacity {
+  opacity: 0.7;
 }
-.header-upper {
-  background-color: var(--color-131921);
+.opacity:hover {
+  opacity: 1;
 }
-.header-upper input{
-  padding-left: 20px;
-  border: none;
-  outline: none;
-  border-radius: 50px;
-}
-.header-upper .input-group-text {
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: var(--color-febd69);
-}
-.header-upper .header-upper-links img {
-  width: 35px;
-  height: 35px;
-}
-.header-bottom {
-  background-color: var(--color-232f3e);
-}
-.header-bottom .menu-links a,
-.header-bottom .dropdown button {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  letter-spacing: 0.3;
-  text-transform: uppercase;
-}
-.header-bottom .dropdown button::before {
-  padding: 10px 10px 0px 0px;
-  content: url("../public/images/menu.svg");
-}
-.header-bottom .dropdown button:focus {
-  box-shadow: none;
-}
-.header-bottom .dropdown-menu {
-  width: 100%;
-  background-color: var(--color-131921);
-  transform: translate3d(0px, 57px, 0px) !important;
-}
-.header-bottom .dropdown-item {
-  padding: 10px;
-  margin-bottom: 3px;
-  border-bottom: 1px solid var(--color-3b4149);
-}
-.header-bottom .dropdown-item:hover {
-  background: transparent;
-  color: var(--color-febd69) !important;
-}
-@media only screen and (max-width: 350px) {
-  .header-bottom .navigations {
-    font-size: 12px;
-  }
-}
-
-/* HEADER PART ENDS HERE */
 
 /* FOOTER PART */
 footer {

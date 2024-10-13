@@ -15,7 +15,7 @@ const Home = () => {
   console.log(isLoggedIn, "FOUND ONE");
   return (
     <>
-      <Container class1="home-wrapper-1 py-1 py-sm-3">
+      <Container class1="home-wrapper-1 py-2 py-sm-3 px-3">
         <div className="row">
           <div className="col-12 col-md-6 px-1 overflow-hidden">
             <Carousel
@@ -308,7 +308,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Container class1="home-wrapper-2 featured-wrapper py-4 py-sm-5">
+      <Container class1="home-wrapper-2 featured-wrapper py-4 py-sm-5 px-2">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading text-center text-sm-start">
@@ -318,7 +318,7 @@ const Home = () => {
           <ProductCard />
         </div>
       </Container>
-      <Container class1="home-wrapper-2 famous-wrapper py-md-5">
+      <Container class1="home-wrapper-2 famous-wrapper py-md-5 px-2">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading text-center text-sm-start">
@@ -413,7 +413,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Container class1="home-wrapper-2 blog-wrapper py-5">
+      <Container class1="home-wrapper-2 blog-wrapper py-5 px-2">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading">Our Latest Blogs</h3>

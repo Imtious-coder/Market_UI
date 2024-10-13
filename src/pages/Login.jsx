@@ -21,7 +21,7 @@ const Login = () => {
   const login = async () => {
     console.log("Login", formData);
     let responseData;
-    await fetch("https://market-backend-r9ew.onrender.com/login", {
+    await fetch("http://localhost:5000/api/user/login", {
       method: "POST",
       headers: {
         Accept: "application/form-data",
@@ -36,7 +36,7 @@ const Login = () => {
       localStorage.setItem("auth-token", responseData.token);
       window.location.replace("/");
     } else {
-      alert(responseData.error);
+      console.log(responseData.error);
     }
   };
   return (

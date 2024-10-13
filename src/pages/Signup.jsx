@@ -21,7 +21,7 @@ const Signup = () => {
   const signup = async () => {
     console.log("Sign up", formData);
     let responseData;
-    await fetch("https://market-backend-r9ew.onrender.com/signup", {
+    await fetch("http://localhost:5000/api/user/signup", {
       method: "POST",
       headers: {
         Accept: "application/form-data",

@@ -1,0 +1,125 @@
+.header-top-strip {
+  border-bottom: 1px solid var(--color-3b4149);
+  background: linear-gradient(
+    109.6deg,
+    rgb(187, 0, 212) 11.2%,
+    rgb(32, 38, 238) 91.1%
+  );
+  background-color: var(--color-131921);
+}
+.header-upper {
+  /* background-color: var(--color-131921); */
+  /* background-color: #F0F0F8; */
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* .header-upper input {
+  outline: none;
+  border-radius: 50px;
+  padding: 12px 5px 12px 20px;
+  border: 1px solid var(--color-dee2e6);
+} */
+
+.header-upper input {
+  outline: none;
+  border-radius: 50px;
+  padding: 12px 5px 12px 20px;
+  border: 1px solid var(--color-dee2e6);
+}
+.header-upper input:focus {
+  border: 1px solid var(--color-dee2e6);
+}
+.header-upper .input-group-text,
+.mobile-menu-visible .input-group-text {
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: var(--color-dee2e6);
+}
+.header-upper .header-upper-links img {
+  width: 40px;
+  height: 40px;
+}
+.header-bottom {
+  /* background-color: var(--color-232f3e); */
+  overflow: hidden;
+  background-color: rgb(224, 224, 224);
+  box-shadow: 0px -2px 30px rgb(215, 244, 255);
+}
+.header-bottom .menu-links a,
+.header-bottom .dropdown button {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3;
+  text-transform: uppercase;
+  color: #131921 !important;
+}
+.header-bottom .dropdown button::before {
+  padding: 10px 10px 0px 0px;
+  content: url("../../public/images/menu.svg");
+}
+.header-bottom .dropdown button:focus {
+  box-shadow: none;
+}
+.header-bottom .dropdown-menu {
+  width: 100%;
+  background-color: var(--color-131921);
+  transform: translate3d(0px, 57px, 0px) !important;
+}
+.header-bottom .dropdown-item {
+  padding: 10px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid var(--color-3b4149);
+}
+.header-bottom .dropdown-item:hover {
+  background: transparent;
+}
+.my-account {
+  overflow: hidden;
+}
+.options {
+  margin-right: 30px;
+  z-index: 9;
+}
+
+@media only screen and (max-width: 992px) {
+  .my-account .options {
+    margin-right: 120px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-mobile .my-account .options {
+    top: 70px;
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .header-mobile .my-account .options {
+    top: 70px;
+    margin-right: 100px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .header-bottom .navigations {
+    font-size: 12px;
+  }
+}
+
+
+/* Responsive menu */
+.mobile-menu-visible {
+  height: auto;
+  position: relative;
+  background: rgb(0, 0, 0);
+  transition: 0.3s all ease-in-out;
+}
+.mobile-menu-visible input {
+  border-radius: 50px;
+  padding: 5px 5px 5px 20px;
+  border: none;
+  outline: none;
+}
+.mobile-menu-visible input:focus {
+  border: none;
+}
