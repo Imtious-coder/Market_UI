@@ -38,7 +38,7 @@ const FlashSaleProductCard = ({ grid }) => {
   return (
     <div className="flash-sale-product-card product-card-container position-relative">
       {/* slider buttons */}
-      <div className="buttons d-flex align-items-center justify-content-end gap-4">
+      <div className="buttons d-none d-md-flex align-items-center justify-content-end gap-4">
         <button className="scroll-btn-left" onClick={() => scrollLeft()}>
           {"<"}
         </button>

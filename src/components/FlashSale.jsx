@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/flashSales.css";
 import Container from "./Container";
 import Countdown from "./Countdown";
 import FlashSaleProductCard from "./FlashSaleProductCard";
@@ -11,8 +10,8 @@ const FlashSale = () => {
         <div className="border-left bg-red"></div>
         <p className="red mb-0">Today's</p>
       </div>
-      <div className="d-flex align-items-end gap-5">
-        <h2 className="mb-0 me-5">Flash Sales</h2>
+      <div className="d-sm-flex align-items-end gap-5">
+        <h2 className="mb-0 me-5 mb-2 mb-sm-0">Flash Sales</h2>
         <Countdown time={2} />
       </div>
       <div className="products">

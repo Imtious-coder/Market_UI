@@ -54,7 +54,6 @@
 .product-card .product-details .description {
   font-size: 14px;
   line-height: 24px;
-  max-height: 45px;
   overflow: hidden;
   opacity: 0.5;
   font-weight: 600;

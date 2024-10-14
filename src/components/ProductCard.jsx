@@ -52,10 +52,14 @@ const ProductCard = ({ grid }) => {
 
                   <div className="product-details">
                     <p className="brand text-center my-2">{brand}</p>
-                    <h4 className="product-title text-center mb-2">{name}</h4>
+                    <h4 className="product-title text-center mb-2">
+                      {name.length > 20
+                        ? name.split("").slice(0, 20).join("") + " . . ."
+                        : name}
+                    </h4>
                     <div
                       style={{ display: "flex", justifyContent: "center" }}
-                      className="ratings"
+                      className="ratings align-items-center gap-2"
                     >
                       <ReactStars
                         count={5}
@@ -64,8 +68,13 @@ const ProductCard = ({ grid }) => {
                         edit={false}
                         activeColor="#ffd700"
                       />
+                      <small className="color1">(12)</small>
                     </div>
-                    <p className="description text-center">{description}</p>
+                    <p className="description text-center">
+                      {description.length > 60
+                        ? description.split("").slice(0, 60).join("") + ". . ."
+                        : description}
+                    </p>
                     <p className="price text-center"> {new_price} BDT </p>
                   </div>
                 </Link>

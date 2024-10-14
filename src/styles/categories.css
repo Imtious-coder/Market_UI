@@ -1,0 +1,63 @@
+.categories .scroll-btn-left,
+.categories .scroll-btn-right {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 5px 13px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.categories .scroll-btn-left:hover,
+.categories .scroll-btn-right:hover {
+  background-color: rgba(0, 0, 0, 0.645);
+}
+.categories::-webkit-scrollbar {
+  display: none;
+}
+.category::-webkit-scrollbar {
+  display: none;
+}
+.categories .category {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+.categories .category .card {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 1px solid #c2c2c2;
+  transition: 0.4s all ease-in-out;
+}
+.categories .category .card:hover {
+  border: 1px solid #db4444;
+  background-color: #db4444;
+}
+.categories .category .card:hover h5,
+.categories .category .card:hover p {
+  color: white;
+  opacity: 1;
+}
+.categories .category .card h5,
+.categories .category .card p {
+  text-align: center;
+  margin-bottom: 0;
+  transition: 0.3s all ease-in-out;
+}
+.categories .category .card h5 {
+  font-size: 38px;
+  opacity: 0.8;
+}
+.categories .category .card p {
+  font-size: 12px;
+  opacity: 0.8;
+}
