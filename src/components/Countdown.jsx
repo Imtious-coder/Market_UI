@@ -38,25 +38,33 @@ const Countdown = ({ time }) => {
       {/* Day */}
       <div className="d-flex flex-column">
         <small>Days</small>
-        <h2 className="mb-0">0{timeLeft.days}</h2>
+        <h2 className="mb-0">
+          {timeLeft.days < 10 ? `0${timeLeft.days}` : timeLeft.days}
+        </h2>
       </div>
       <span className="red fs-2 mt-3">:</span>
       {/* Hours */}
       <div className="d-flex flex-column">
         <small>Hours</small>
-        <h2 className="mb-0">{timeLeft.hours}</h2>
+        <h2 className="mb-0">
+          {timeLeft.hours < 10 ? `0${timeLeft.hours}` : timeLeft.hours}
+        </h2>
       </div>
       <span className="red fs-2 mt-3">:</span>
       {/* Minutes */}
       <div className="d-flex flex-column">
         <small>Minutes</small>
-        <h2 className="mb-0">{timeLeft.minutes}</h2>
+        <h2 className="mb-0">
+          {timeLeft.minutes < 10 ? `0${timeLeft.minutes}` : timeLeft.minutes}
+        </h2>
       </div>
       <span className="red fs-2 mt-3">:</span>
       {/* Seconds */}
       <div className="d-flex flex-column">
         <small>Seconds</small>
-        <h2 className="mb-0">{timeLeft.seconds}</h2>
+        <h2 className="mb-0">
+          {timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds}
+        </h2>
       </div>
     </section>
   );
