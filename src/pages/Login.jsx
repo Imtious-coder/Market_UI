@@ -21,7 +21,7 @@ const Login = () => {
   const login = async () => {
     console.log("Login", formData);
     let responseData;
-    await fetch("http://localhost:5000/api/user/login", {
+    await fetch("https://market-backend-1-mmzk.onrender.com/api/user/login", {
       method: "POST",
       headers: {
         Accept: "application/form-data",
