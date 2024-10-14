@@ -16,7 +16,7 @@ const ShopContextProvider = (props) => {
 
   // ALL PRODUCTS API
   useEffect(() => {
-    fetch("http://localhost:4000/allproducts")
+    fetch("https://market-backend-r9ew.onrender.com/allproducts")
       .then((res) => res.json())
       .then((data) => setAllProducts(data));
   }, []);
