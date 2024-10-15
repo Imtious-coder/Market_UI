@@ -11,7 +11,7 @@ const Famous = () => {
       </div>
       <div className="row">
         <div className="col-12">
-          <h3 className="section-heading text-center text-sm-start">
+          <h3 className="section-heading">
             Famous Product's
           </h3>
         </div>

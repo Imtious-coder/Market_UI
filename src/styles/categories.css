@@ -21,15 +21,15 @@
 }
 .categories .category {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   overflow-x: scroll;
   scroll-behavior: smooth;
   white-space: nowrap;
 }
 .categories .category .card {
   flex: 0 0 auto;
-  width: 120px;
-  height: 120px;
+  width: 85px;
+  height: 85px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -54,10 +54,23 @@
   transition: 0.3s all ease-in-out;
 }
 .categories .category .card h5 {
-  font-size: 38px;
+  font-size: 24px;
   opacity: 0.8;
 }
 .categories .category .card p {
   font-size: 12px;
   opacity: 0.8;
+}
+
+@media only screen and (min-width: 768px) {
+  .categories .category {
+    gap: 20px;
+  }
+  .categories .category .card {
+    width: 120px;
+    height: 120px;
+  }
+  .categories .category .card h5 {
+    font-size: 38px;
+  }
 }

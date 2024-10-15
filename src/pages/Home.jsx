@@ -4,11 +4,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import BlogCard from "../components/BlogCard";
 import Categories from "../components/Categories";
 import Container from "../components/Container";
+import Famous from "../components/Famous";
 import FeaturedCollections from "../components/FeaturedCollections";
 import FlashSale from "../components/FlashSale";
 import Hero from "../components/Hero";
 import SpecialProduct from "../components/SpecialProduct";
-import Famous from "../components/Famous";
 
 const Home = () => {
   const isLoggedIn = localStorage.getItem("auth-token");
@@ -44,7 +44,7 @@ const Home = () => {
       <Categories />
       <FeaturedCollections />
       <Famous />
-      <Container class1="home-wrapper-2 special-wrapper py-5">
+      {/* <Container class1="home-wrapper-2 special-wrapper py-5">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading text-center text-sm-start">
@@ -55,7 +55,7 @@ const Home = () => {
         <div className="row">
           <SpecialProduct />
         </div>
-      </Container>
+      </Container> */}
       <Container class1="marque-wrapper">
         <div className="row">
           <div className="col-12 p-0">

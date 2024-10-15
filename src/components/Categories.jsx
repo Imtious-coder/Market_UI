@@ -179,7 +179,7 @@ const Categories = () => {
   };
 
   return (
-    <Container class1="categories py-2 py-sm-3 px-3 my-5">
+    <Container class1="categories py-2 py-sm-3 px-2 my-2 my-md-5">
       <div className="d-flex align-items-center gap-3 mb-3">
         <div className="border-left bg-red"></div>
         <p className="red mb-0">Categories</p>
@@ -205,7 +205,7 @@ const Categories = () => {
               <p title={name}>
                 {" "}
                 {name.length > 8
-                  ? name.split("").slice(0, 8).join("") + ". . ."
+                  ? name.split("").slice(0, 8).join("") + "..."
                   : name}
               </p>
             </div>

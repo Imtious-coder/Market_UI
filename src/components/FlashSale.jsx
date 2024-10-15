@@ -5,7 +5,7 @@ import FlashSaleProductCard from "./FlashSaleProductCard";
 
 const FlashSale = () => {
   return (
-    <Container class1="flash-sale py-2 py-sm-3 px-3 my-5">
+    <Container class1="flash-sale py-2 py-sm-3 px-2 my-md-5">
       <div className="d-flex align-items-center gap-3 mb-3">
         <div className="border-left bg-red"></div>
         <p className="red mb-0">Today's</p>

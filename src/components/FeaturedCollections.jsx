@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "./Container";
-import ProductCard from "./ProductCard";
+import FeaturedCollectionsProductCard from "./FeaturedCollectionsProductCard";
 
 const FeaturedCollections = () => {
   return (
@@ -8,12 +8,12 @@ const FeaturedCollections = () => {
       <div className="row">
         <div className="d-flex align-items-center gap-3 mb-3">
           <div className="border-left bg-red"></div>
-          <p className="red mb-0">This Month</p>
+          <p className="red mb-0">This Month's</p>
         </div>
         <div className="col-12 mb-2">
-          <h2 className="text-center text-sm-start">Featured Collections</h2>
+          <h2 className="mb-0">Featured Collections</h2>
         </div>
-        <ProductCard />
+        <FeaturedCollectionsProductCard />
       </div>
     </Container>
   );
