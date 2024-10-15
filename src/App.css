@@ -433,6 +433,7 @@ footer .input-group-text {
   height: 40px;
   font-size: 14px;
   border-radius: 5px;
+  /* border-bottom: 1px solid transparent; */
   border-color: transparent;
   color: var(--color-777777);
   background-color: var(--color-f5f5f7);

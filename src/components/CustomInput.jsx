@@ -16,7 +16,7 @@ const CustomInput = ({
         placeholder={placeholder}
         value={value}
         onChange={handleFormData}
-        className={`form-control ${className}`}
+        className={`${className}`}
       />
     </div>
   );
