@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { FaSignInAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import image from "../Assets/Images/signup.png";
 import BreadCrumb from "../components/BreadCrumb";
-import Container from "../components/Container";
 import CustomInput from "../components/CustomInput";
 import Meta from "../components/Meta";
+import "../styles/login.css";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -39,51 +41,65 @@ const Login = () => {
       console.log(responseData.error);
     }
   };
+
   return (
     <>
       <Meta title={"Login"} />
       <BreadCrumb title="Login" />
-      <Container class1="login-wrapper home-wrapper-2 py-0 py-sm-5">
-        <div className="row justify-content-center">
-          <div className="col-12 col-sm-7 col-md-6 col-lg-4">
-            <div className="auth-card">
-              <h3 className="text-center">Login</h3>
-              <div className="d-flex flex-column gap-15 mt-4">
-                <CustomInput
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  handleFormData={handleFormData}
-                  placeholder="Email"
-                />
-                <CustomInput
-                  type="password"
-                  name="password"
-                  value={formData.password}
-                  handleFormData={handleFormData}
-                  placeholder="Password"
-                />
-                <div>
-                  <Link to="/forgot-password">Forgot Password?</Link>
-                  <div className="d-flex justify-content-center align-items-center mt-3 gap-15">
-                    <button
-                      onClick={() => {
-                        login();
-                      }}
-                      className="button border-0"
-                    >
-                      Login
-                    </button>
-                    <Link to="/signup">
-                      <button className="button2 border-0">Sign up</button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+      <section className="login row m-0 w-100 mb-5 px-3 px-sm-5 px-lg-0">
+        <div className="img d-none d-lg-block col-lg-6 m-0 p-0">
+          <img className="img-fluid" src={image} alt="Signup Visual" />
+        </div>
+        <div className="col-1 d-none d-lg-block"></div>
+        <div className="col-12 col-lg-5 mt-4 px-sm-5 px-lg-0 py-lg-5 pe-lg-5 ">
+          <h2 className="px-sm-5 px-lg-0 text-center text-sm-start">
+            Log in to Market.
+          </h2>
+          <p className="px-sm-5 px-lg-0 text-center text-sm-start">
+            Enter your details below
+          </p>
+          <div className="my-4 px-sm-5 px-lg-0 pe-lg-5">
+            <CustomInput
+              type="email"
+              name="email"
+              value={formData.email}
+              handleFormData={handleFormData}
+              placeholder="Email"
+              className={"mt-4"}
+            />
+
+            <CustomInput
+              type="password"
+              name="password"
+              value={formData.password}
+              handleFormData={handleFormData}
+              placeholder="Password"
+              className={"mt-4"}
+            />
+
+            <div className="d-flex flex-column flex-md-row align-items-center gap-4 my-3">
+              <button
+                onClick={() => login()}
+                className="bg-red white login-button mt-2 mt-md-0 d-flex align-items-center justify-content-center gap-2"
+              >
+                <FaSignInAlt />
+                <span>Login</span>
+              </button>
+
+              <button className="login-google-button d-flex align-items-center justify-content-center red gap-2 my-md-4">
+                Forget Password?
+              </button>
             </div>
+
+            <p className="d-flex align-items-center justify-content-center gap-3">
+              <span>Don't have an account?</span>
+              <Link className="red text-decoration-underline" to="/signup">
+                Sign up
+              </Link>
+            </p>
           </div>
         </div>
-      </Container>
+      </section>
     </>
   );
 };

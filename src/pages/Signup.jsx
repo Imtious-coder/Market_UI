@@ -134,9 +134,13 @@ const Signup = () => {
         </div>
         <div className="col-1 d-none d-lg-block"></div>
         <div className="col-12 col-lg-5 mt-4 px-sm-5 px-lg-0 py-lg-5 pe-lg-5 ">
-          <h2 className="px-sm-5 px-lg-0">Create an account</h2>
-          <p className="px-sm-5 px-lg-0">Enter your details below</p>
-          <div className="my-5 px-sm-5 px-lg-0 pe-lg-5">
+          <h2 className="px-sm-5 px-lg-0 text-center text-sm-start">
+            Create an account
+          </h2>
+          <p className="px-sm-5 px-lg-0 text-center text-sm-start">
+            Enter your details below
+          </p>
+          <div className="my-4 px-sm-5 px-lg-0 pe-lg-5">
             {errors.username && (
               <small className="text-danger">{errors.username}</small>
             )}

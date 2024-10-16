@@ -87,7 +87,7 @@ const Hero = () => {
             </div>
           </Carousel>
         </div>
-        <div className="col-12 col-md-6 mt-sm-2 mt-md-0">
+        <div className="col-12 col-md-6 mt-sm-2 mt-md-0 d-none d-md-block">
           <div className="row">
             <div className="col-6 col-sm-6 mt-1 mt-md-0 px-1 px-md-2">
               <div className="small-banner position-relative">
